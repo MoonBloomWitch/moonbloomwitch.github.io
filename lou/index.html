@@ -7,363 +7,179 @@
 
   <title>Lou — MoonBloomWitch</title>
 
-  <meta name="description" content="Certains mots ne trouvent leur place nulle part ailleurs.">
+  <meta name="description" content="Lou — les mots qui ne trouvent leur place nulle part ailleurs.">
 
   <style>
-
-    * {
-      box-sizing: border-box;
-    }
 
     body {
       margin: 0;
       background: #151812;
-      color: #d9d5c8;
-      font-family: Georgia, "Times New Roman", serif;
-      line-height: 1.9;
+      color: #e8e3d6;
+      font-family: Georgia, serif;
+      line-height: 1.8;
     }
-
-    /* ÉTOILES */
-
-    body::before {
-      content: "✦     ✧          ✦     ✧     ✦";
-      display: block;
-      text-align: center;
-      color: #7d8067;
-      font-size: 13px;
-      letter-spacing: 6px;
-      padding-top: 30px;
-    }
-
-    /* NAVIGATION DISCRÈTE */
-
-    nav {
-      text-align: center;
-      padding: 18px 10px;
-      border-bottom: 1px solid #30352b;
-    }
-
-    nav a {
-      color: #8d9279;
-      text-decoration: none;
-      margin: 0 14px;
-      font-size: 13px;
-      letter-spacing: 1px;
-    }
-
-    nav a:hover {
-      color: #c0b39a;
-    }
-
-    /* EN-TÊTE */
 
     header {
       text-align: center;
-      padding: 70px 20px 65px;
+      padding: 70px 20px 40px;
     }
 
     .moon {
-      font-size: 95px;
-      color: #c9c5b5;
-      text-shadow:
-        0 0 20px rgba(220, 216, 190, 0.25),
-        0 0 50px rgba(130, 135, 105, 0.15);
-      line-height: 1;
-    }
-
-    .flowers {
-      color: #70765d;
-      font-size: 25px;
-      letter-spacing: 10px;
-      margin: 25px 0;
+      font-size: 42px;
+      margin-bottom: 15px;
     }
 
     h1 {
-      font-size: 52px;
+      font-size: 42px;
       font-weight: normal;
-      color: #d5d0c0;
-      letter-spacing: 7px;
-      margin: 0;
+      letter-spacing: 3px;
+      margin: 0 0 10px;
     }
 
     .subtitle {
-      color: #8f8b7d;
-      font-size: 16px;
+      color: #aeb5a2;
       font-style: italic;
-      margin-top: 18px;
+      font-size: 16px;
     }
 
-    .divider {
-      width: 90px;
-      height: 1px;
-      background: #555b48;
-      margin: 35px auto;
+    nav {
+      text-align: center;
+      margin: 20px 0 50px;
     }
 
-    /* INTRODUCTION */
+    nav a {
+      color: #b9c0ad;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #e8e3d6;
+    }
 
     main {
-      max-width: 760px;
+      max-width: 800px;
       margin: auto;
-      padding: 0 25px 90px;
+      padding: 0 25px 80px;
     }
-
-    .intro {
-      text-align: center;
-      color: #9a9587;
-      font-style: italic;
-      font-size: 16px;
-      margin-bottom: 55px;
-    }
-
-    /* ARTICLES */
 
     .lou-entry {
-      background: rgba(30, 34, 27, 0.8);
-      border: 1px solid #353a2f;
-      padding: 40px;
-      margin-bottom: 35px;
-      box-shadow:
-        0 10px 35px rgba(0, 0, 0, 0.25);
+      border-top: 1px solid #3b4037;
+      padding: 35px 0;
+    }
+
+    .lou-entry:last-child {
+      border-bottom: 1px solid #3b4037;
     }
 
     .date {
-      color: #777d64;
-      font-size: 12px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      text-align: center;
+      color: #8f9887;
+      font-size: 13px;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
     }
 
     h2 {
-      color: #c8c2b1;
-      font-size: 31px;
+      font-size: 27px;
       font-weight: normal;
-      text-align: center;
-      margin: 14px 0 22px;
+      margin: 0 0 15px;
     }
 
     .excerpt {
-      color: #b8b4a8;
-      font-size: 17px;
-      line-height: 2;
-      text-align: center;
-      margin-bottom: 28px;
+      color: #c7c4b9;
+      font-size: 16px;
+      margin-bottom: 20px;
     }
 
     .read-more {
-      display: block;
-      width: fit-content;
-      margin: auto;
-      color: #8d9279;
+      color: #aeb5a2;
       text-decoration: none;
       font-style: italic;
-      border-bottom: 1px solid #555b48;
-      padding-bottom: 4px;
-      transition: color 0.3s ease;
+      font-size: 15px;
     }
 
     .read-more:hover {
-      color: #c8b99e;
+      color: #e8e3d6;
     }
 
-    /* PETIT SYMBOLE */
-
-    .symbol {
+    .back {
       text-align: center;
-      color: #626951;
-      font-size: 18px;
-      margin: 50px 0;
-      letter-spacing: 8px;
+      margin-top: 60px;
     }
 
-    /* RETOUR */
-
-    .return {
-      text-align: center;
-      margin-top: 65px;
-    }
-
-    .return a {
-      color: #747b63;
+    .back a {
+      color: #8f9887;
       text-decoration: none;
-      font-size: 13px;
-      letter-spacing: 1px;
+      font-style: italic;
+      font-size: 14px;
     }
 
-    .return a:hover {
-      color: #b9ad94;
-    }
-
-    /* PIED DE PAGE */
-
-    footer {
-      text-align: center;
-      padding: 60px 20px;
-      color: #606751;
-      font-size: 13px;
-    }
-
-    /* TÉLÉPHONE */
-
-    @media (max-width: 600px) {
-
-      h1 {
-        font-size: 40px;
-        letter-spacing: 5px;
-      }
-
-      .moon {
-        font-size: 75px;
-      }
-
-      nav a {
-        margin: 0 7px;
-        font-size: 12px;
-      }
-
-      .lou-entry {
-        padding: 28px 22px;
-      }
-
-      h2 {
-        font-size: 27px;
-      }
-
+    .back a:hover {
+      color: #e8e3d6;
     }
 
   </style>
 
 </head>
 
-
 <body>
-
-
-  <nav>
-
-    <a href="../index.html">Accueil</a>
-    <a href="../journal.html">Journal</a>
-    <a href="../photos.html">Photos</a>
-
-  </nav>
-
 
   <header>
 
-    <div class="moon">
-      ☾
-    </div>
+    <div class="moon">☾</div>
 
-    <div class="flowers">
-      ❀ ✦ ❀
-    </div>
-
-    <h1>
-      Lou
-    </h1>
+    <h1>Lou</h1>
 
     <div class="subtitle">
       les mots qui ne trouvent leur place nulle part ailleurs
     </div>
 
-    <div class="divider"></div>
-
   </header>
+
+
+  <nav>
+
+    <a href="../index.html">Accueil</a>
+
+    <a href="../journal.html">Journal</a>
+
+    <a href="../photos.html">Photos</a>
+
+    <a href="../a-propos.html">À propos</a>
+
+  </nav>
 
 
   <main>
 
-
-    <div class="intro">
-
-      Certains textes restent dans l'ombre.<br>
-      Certains mots n'ont pas besoin d'être expliqués.
-
-    </div>
-
-
-    <!-- PREMIER ARTICLE -->
-
     <article class="lou-entry">
 
-      <div class="date">
-        2026
-      </div>
+      <div class="date">2026</div>
 
-      <h2>
-        Tu n'étais pas là
-      </h2>
+      <h2>Tu n'étais pas là</h2>
 
       <p class="excerpt">
-
         Certains silences prennent plus de place
         que les mots.
-
       </p>
 
-    <a href="../articles/Tu-n-etais-pas-la.html" class="read-more">
-  Lire →
-</a>
-
-    </article>
-
-
-    <div class="symbol">
-      ✦ ✧ ✦
-    </div>
-
-
-    <!--
-      POUR AJOUTER UN NOUVEL ARTICLE,
-      COPIE LE BLOC CI-DESSOUS
-    -->
-
-    <!--
-
-    <article class="lou-entry">
-
-      <div class="date">
-        04 septembre 2026
-      </div>
-
-      <h2>
-        Titre de ton article
-      </h2>
-
-      <p class="excerpt">
-
-        Quelques lignes de ton texte...
-
-      </p>
-
-      <a href="nom-de-ton-article.html" class="read-more">
+      <a href="../articles/Tu-n-etais-pas-la.html" class="read-more">
         Lire →
       </a>
 
     </article>
 
-    -->
 
-
-    <div class="return">
+    <div class="back">
 
       <a href="../index.html">
-        ← retourner dans la lumière
+        ← Retour à MoonBloomWitch
       </a>
 
     </div>
 
-
   </main>
-
-
-  <footer>
-
-    ☾ ✦ MoonBloomWitch ✦ ☽
-
-  </footer>
-
 
 </body>
 
