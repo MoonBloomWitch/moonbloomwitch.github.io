@@ -2,143 +2,236 @@
 <html lang="fr">
 
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Tu n'étais pas là — MoonBloomWitch</title>
+  <title>Tu n'étais pas là — Lou — MoonBloomWitch</title>
+
+  <meta name="description" content="Tu n'étais pas là — un texte de Lou.">
 
   <style>
+
     * {
       box-sizing: border-box;
     }
 
     body {
       margin: 0;
-      background: #f3eee3;
-      color: #3f4035;
+      background: #151812;
+      color: #e8e3d6;
       font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.8;
     }
+
+    /* Étoiles */
 
     body::before {
       content: "✦  ✧  ✦  ✧  ✦";
       display: block;
       text-align: center;
-      color: #879477;
+      color: #7f8977;
       font-size: 14px;
       letter-spacing: 12px;
       padding-top: 25px;
     }
 
+    /* Navigation */
+
+    nav {
+      text-align: center;
+      margin: 20px 0 50px;
+    }
+
+    nav a {
+      color: #aeb5a2;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+
+    nav a:hover {
+      color: #e8e3d6;
+    }
+
+    /* En-tête */
+
     header {
       text-align: center;
-      padding: 35px 20px 50px;
+      padding: 25px 20px 55px;
     }
 
     .moon {
-      font-size: 90px;
-      color: #e8dfc9;
+      font-size: 70px;
+      color: #dcd6c3;
       text-shadow:
-        0 0 20px rgba(255, 249, 220, 0.9),
-        0 0 45px rgba(160, 153, 119, 0.35);
+        0 0 20px rgba(255, 249, 220, 0.75),
+        0 0 45px rgba(160, 153, 119, 0.3);
+      line-height: 1;
+      margin-bottom: 20px;
     }
 
     .flowers {
       color: #879477;
-      font-size: 28px;
+      font-size: 25px;
       letter-spacing: 8px;
-      margin: 15px 0;
+      margin-bottom: 22px;
+    }
+
+    .date {
+      color: #8f9887;
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
     }
 
     h1 {
       font-size: 40px;
       font-weight: normal;
-      color: #5b6250;
+      color: #e8e3d6;
       letter-spacing: 2px;
       line-height: 1.4;
+      margin: 0;
     }
 
-    .date {
-      color: #879477;
-      font-size: 13px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
+    .small-line {
+      width: 90px;
+      height: 1px;
+      background: #4a5045;
+      margin: 30px auto 0;
     }
+
+    /* Article */
 
     main {
-      max-width: 760px;
+      max-width: 800px;
       margin: auto;
-      padding: 20px 25px 80px;
+      padding: 0 25px 80px;
     }
 
     .article {
-      background: rgba(255, 252, 243, 0.7);
-      border: 1px solid #ddd5c4;
-      padding: 45px;
-      box-shadow: 0 8px 25px rgba(91, 98, 80, 0.07);
+      border-top: 1px solid #3b4037;
+      border-bottom: 1px solid #3b4037;
+      padding: 45px 20px;
     }
 
     .article p {
       font-size: 18px;
       line-height: 2;
       text-align: center;
-      margin: 28px 0;
+      margin: 30px 0;
+      color: #d0cdc2;
+    }
+
+    .article strong {
+      color: #e8e3d6;
+      font-weight: normal;
+      font-style: italic;
     }
 
     .quote {
-      color: #68745e;
+      color: #aeb5a2 !important;
       font-style: italic;
-      margin: 40px 20px;
+      margin: 50px 20px !important;
+      padding: 20px 0;
     }
 
     .heart {
       font-size: 25px;
       color: #879477;
       text-align: center;
-      margin: 35px 0;
+      margin: 45px 0;
     }
+
+    /* Retour */
 
     .back {
       display: block;
       text-align: center;
-      margin-top: 40px;
-      color: #68745e;
+      margin-top: 55px;
+      color: #8f9887;
       text-decoration: none;
       font-style: italic;
+      font-size: 14px;
     }
 
     .back:hover {
-      color: #4f5b47;
+      color: #e8e3d6;
     }
+
+    /* Pied de page */
 
     footer {
       text-align: center;
-      padding: 40px;
-      color: #879477;
+      padding: 45px 20px 60px;
+      color: #68705f;
+      font-size: 14px;
     }
+
+    /* Téléphone */
 
     @media (max-width: 600px) {
 
+      nav {
+        margin-bottom: 35px;
+      }
+
+      nav a {
+        margin: 0 6px;
+        font-size: 13px;
+      }
+
+      .moon {
+        font-size: 60px;
+      }
+
       h1 {
-        font-size: 32px;
+        font-size: 31px;
       }
 
       .article {
-        padding: 25px;
+        padding: 30px 5px;
       }
 
       .article p {
         font-size: 17px;
+        line-height: 1.9;
       }
+
     }
+
   </style>
+
 </head>
 
 
 <body>
 
+
+  <!-- NAVIGATION -->
+
+  <nav>
+
+    <a href="../index.html">Accueil</a>
+
+    <a href="../journal.html">Journal</a>
+
+    <a href="../photos.html">Photos</a>
+
+    <a href="../a-propos.html">À propos</a>
+
+  </nav>
+
+
+  <!-- EN-TÊTE -->
+
   <header>
 
-    <div class="moon">☾</div>
+    <div class="moon">
+      ☾
+    </div>
 
     <div class="flowers">
       ❀ ❁ ❀
@@ -152,25 +245,33 @@
       Hier... Tu n'étais pas là...
     </h1>
 
+    <div class="small-line"></div>
+
   </header>
 
+
+  <!-- TEXTE -->
 
   <main>
 
     <article class="article">
+
 
       <p>
         Mes mots se perdront dans la toile.
         Peut-être t'attraperont-ils un jour, par hasard ?
       </p>
 
+
       <p>
         Si j'avais pu te parler librement.
       </p>
 
+
       <p>
         Chaque jour je t'aurais dit que ta présence me réchauffait le cœur.
       </p>
+
 
       <p>
         Parfois je n'ai pas pu résister.
@@ -181,38 +282,57 @@
         C'est normal.
       </p>
 
+
       <p>
         Pardonne-moi.
       </p>
 
+
       <p>
-        Comprendras-tu aujourd'hui que tu n'étais pas "préféré" ? Ce mot est insuffisant. Il ne représente pas ce que je pense de toi. Je ne peux pas te comparer avec les autres. Tu es tellement plus pour moi. Tu n'es pas un parmi d'autre. Tu es unique.
+        Comprendras-tu aujourd'hui que tu n'étais pas "préféré" ?
+        Ce mot est insuffisant. Il ne représente pas ce que je pense de toi.
+        Je ne peux pas te comparer avec les autres.
+        Tu es tellement plus pour moi.
+        Tu n'es pas un parmi d'autre.
+        Tu es unique.
       </p>
+
 
       <p>
         Tu es aimé.
-         <p>
-        Oui : <strong>Je t'aime.</strong> <br> Profondément. Intensément. Silencieusement. Illégalement.
       </p>
 
+
       <p>
-        Est-ce que tu comprends la différence? Car c'est bien différent.
+        Oui : <strong>Je t'aime.</strong>
+        <br>
+        Profondément. Intensément. Silencieusement. Illégalement.
       </p>
+
+
+      <p>
+        Est-ce que tu comprends la différence?
+        Car c'est bien différent.
+      </p>
+
 
       <p>
         J'aime ta présence, j'aime tes mains,
         j'aime la manière dont tu occupes le monde.
       </p>
 
+
       <p>
         Comment tu marches, comment tu cours, comment tu écris.
         J'aime que tu sois gaucher.
       </p>
 
+
       <p>
         J'aime ton regard, j'aime tes cicatrices, j'aime ton odeur.
         J'aime ce que tu es en entier.
       </p>
+
 
       <p>
         J'aime quand tu ne dis rien mais que tu ressens si fort.
@@ -220,13 +340,16 @@
         J'aime la chaleur de mes bras autour de toi.
       </p>
 
+
       <p>
         Chaque jour ton absence me déchire un peu plus à l'intérieur.
       </p>
 
+
       <p class="quote">
         « Je ne suis pas dans ta tête, mais toi tu es dans mon coeur. »
       </p>
+
 
       <p>
         C'est interdit, et tu ne devrais jamais lire ça.
@@ -234,33 +357,39 @@
         Voilà pourquoi j'ai peur.
       </p>
 
+
       <p>
         Voilà pourquoi je fais semblant de ne pas avoir mal.
       </p>
+
 
       <div class="heart">
         ♡
       </div>
 
+
       <p>
         Quel est le sens de tout ça ?
         Et d'ailleurs, est-ce que ça en a, du sens?
         Serait-ce insensé?
-              </p>
+      </p>
+
 
     </article>
 
 
-    <a class="back" href="../index.html">
-      ← Retour à mon journal
+    <a class="back" href="index.html">
+      ← Retour à Lou
     </a>
+
 
   </main>
 
 
   <footer>
-    ☾ ✦ MoonBloomWitch ✦ ☽
+    ☾ ✦ Lou · MoonBloomWitch ✦ ☽
   </footer>
+
 
 </body>
 
