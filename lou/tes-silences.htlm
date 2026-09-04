@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tes silences — Lou — MoonBloomWitch</title>
+
+  <meta name="description" content="Tes silences — un texte de Lou.">
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #151812;
+      color: #aaa89f;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.9;
+    }
+
+    /* Étoiles */
+
+    body::before {
+      content: "✦  ✧  ✦  ✧  ✦";
+      display: block;
+      text-align: center;
+      color: #777d70;
+      font-size: 14px;
+      letter-spacing: 12px;
+      padding-top: 25px;
+    }
+
+    /* Navigation */
+
+    nav {
+      text-align: center;
+      margin: 20px 0 50px;
+    }
+
+    nav a {
+      color: #8f9588;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+
+    nav a:hover {
+      color: #aaa89f;
+    }
+
+    /* En-tête */
+
+    header {
+      text-align: center;
+      padding: 25px 20px 55px;
+    }
+
+    .moon {
+      font-size: 48px;
+      color: #aaa89f;
+      line-height: 1;
+      margin-bottom: 18px;
+    }
+
+    .flowers {
+      color: #777d70;
+      font-size: 22px;
+      letter-spacing: 8px;
+      margin: 12px 0 25px;
+    }
+
+    .date {
+      color: #777d70;
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 40px;
+      font-weight: normal;
+      color: #b0ada3;
+      letter-spacing: 3px;
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    .small-line {
+      width: 90px;
+      height: 1px;
+      background: #41463d;
+      margin: 30px auto 0;
+    }
+
+    /* Article */
+
+    main {
+      max-width: 760px;
+      margin: auto;
+      padding: 0 25px 80px;
+    }
+
+    .article {
+      border-top: 1px solid #353a32;
+      border-bottom: 1px solid #353a32;
+      padding: 35px 20px 45px;
+    }
+
+    .article p {
+      font-size: 18px;
+      line-height: 2;
+      text-align: center;
+      margin: 30px 0;
+      color: #96958d;
+    }
+
+    /* Mots importants */
+
+    .article strong {
+      color: #b6b9a8;
+      font-weight: bold;
+      text-decoration: underline;
+      text-decoration-color: #7f8778;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    /* Citation */
+
+    .quote {
+      color: #8f9588 !important;
+      font-style: italic;
+      margin: 45px 20px !important;
+      padding: 15px 0;
+    }
+
+    /* Cœur */
+
+    .heart {
+      font-size: 28px;
+      color: #777d70;
+      text-align: center;
+      margin: 45px 0;
+    }
+
+    /* Retour */
+
+    .back {
+      display: block;
+      text-align: center;
+      margin-top: 45px;
+      color: #777d70;
+      text-decoration: none;
+      font-style: italic;
+      font-size: 14px;
+    }
+
+    .back:hover {
+      color: #aaa89f;
+    }
+
+    /* Pied de page */
+
+    footer {
+      text-align: center;
+      padding: 20px 20px 50px;
+      color: #555b51;
+      font-size: 13px;
+      letter-spacing: 2px;
+    }
+
+    /* Téléphone */
+
+    @media (max-width: 600px) {
+
+      nav {
+        margin-bottom: 35px;
+      }
+
+      nav a {
+        margin: 0 6px;
+        font-size: 13px;
+      }
+
+      .moon {
+        font-size: 48px;
+      }
+
+      h1 {
+        font-size: 31px;
+      }
+
+      .article {
+        padding: 30px 5px 35px;
+      }
+
+      .article p {
+        font-size: 17px;
+        line-height: 1.9;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- NAVIGATION -->
+
+  <nav>
+
+    <a href="../index.html">Accueil</a>
+
+    <a href="../journal.html">Journal</a>
+
+    <a href="../photos.html">Photos</a>
+
+    <a href="../a-propos.html">À propos</a>
+
+  </nav>
+
+
+  <!-- EN-TÊTE -->
+
+  <header>
+
+    <div class="moon">
+      ☾
+    </div>
+
+    <div class="flowers">
+      ❀ ❁ ❀
+    </div>
+
+    <div class="date">
+      04 septembre 2026
+    </div>
+
+    <h1>
+      Tes silences
+    </h1>
+
+    <div class="small-line"></div>
+
+  </header>
+
+
+  <!-- TEXTE -->
+
+  <main>
+
+    <article class="article">
+
+
+      <p>
+        Tes silences résonnent dans ma tête.
+      </p>
+
+
+      <p>
+        Tu étais là, ton empreinte s'y trouve
+        encore.
+      </p>
+
+
+      <p>
+        Chaque mot que tu as écrit. Chaque
+        parole que tu as laissé échapper. Chaque regard que l'on a partagé.
+      </p>
+
+
+      <p class="quote">
+        « Je sens que tu es là. »
+        <br>
+        m'as-tu dit un jour, alors que je me tenais derrière toi, en
+        silence.
+      </p>
+
+
+      <p>
+        Ces mots m'avaient bouleversée. Je
+        sentais ta présence aussi. Je la sentais si douce. Sans que tu n'aies
+        besoin de parler. D'ailleurs tu n'as jamais dit ce que tu ressentais
+        au fond.
+      </p>
+
+
+      <p>
+        En ton absence chaque minute devient
+        une éternité dans ces murs qui ont été nos témoins.
+      </p>
+
+
+      <p>
+        Je me souviens de tes mains saisissant
+        les miennes, pour m'empêcher d'agir. Je te tenais alors dans mes
+        bras. Je ne voulais pas que ces instants s'arrêtent. Je respirais
+        l'odeur de tes cheveux. Je sentais ta chaleur sous mes paumes.
+      </p>
+
+
+      <p>
+        C'était si doux. C'était tout ce que
+        je pouvais t'offrir. Une étreinte secrète. Les années qui nous
+        séparent rendent pour l'instant le reste inaccessible.
+      </p>
+
+
+      <p>
+        Vis ce que tu as à vivre.
+      </p>
+
+
+      <p>
+        <strong>Je m'interdis de te briser.</strong>
+      </p>
+
+
+      <div class="heart">
+        ♡
+      </div>
+
+
+    </article>
+
+
+    <a class="back" href="index.html">
+      ← Retour à Lou
+    </a>
+
+
+  </main>
+
+
+  <footer>
+    ☾ ✦ Lou · MoonBloomWitch ✦ ☽
+  </footer>
+
+
+</body>
+
+</html>
