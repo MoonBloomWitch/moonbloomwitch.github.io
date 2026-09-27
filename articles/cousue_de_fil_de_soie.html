@@ -2,11 +2,10 @@
 <html lang="fr">
 
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title> Cousue de fil de soie </title>
+  <title>Cousue de fil de soie — MoonBloomWitch</title>
 
   <meta name="description" content="Un texte sur les portes, les saveurs et les histoires qui cherchent leur chemin.">
 
@@ -19,36 +18,88 @@
     body {
       margin: 0;
       background: #f3eee3;
-      color: #4f5a4b;
+      color: #3f4035;
       font-family: Georgia, "Times New Roman", serif;
-      line-height: 1.8;
     }
+
+    body::before {
+      content: "✦ ✧ ✦ ✧ ✦";
+      display: block;
+      text-align: center;
+      color: #879477;
+      font-size: 14px;
+      letter-spacing: 12px;
+      padding-top: 25px;
+    }
+
+    /* NAVIGATION */
+
+    nav {
+      text-align: center;
+      padding: 18px 10px;
+      border-bottom: 1px solid #ddd5c4;
+      background: rgba(255, 252, 243, 0.45);
+    }
+
+    nav a {
+      color: #68745e;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+
+    nav a:hover {
+      color: #9a8065;
+    }
+
+    /* EN-TÊTE */
 
     header {
       text-align: center;
-      padding: 60px 20px 40px;
+      padding: 55px 20px 45px;
     }
 
     .moon {
-      font-size: 42px;
-      color: #879477;
-      margin-bottom: 15px;
+      font-size: 75px;
+      color: #e8dfc9;
+      text-shadow:
+        0 0 20px rgba(255, 249, 220, 0.9),
+        0 0 45px rgba(160, 153, 119, 0.35);
+      line-height: 1;
     }
 
-    .date {
+    .flowers {
       color: #879477;
-      font-size: 13px;
-      letter-spacing: 1px;
-      margin-bottom: 15px;
+      font-size: 24px;
+      letter-spacing: 8px;
+      margin: 20px 0;
     }
 
     h1 {
-      font-size: 38px;
+      font-size: 42px;
       font-weight: normal;
-      letter-spacing: 2px;
+      color: #5b6250;
+      letter-spacing: 3px;
       margin: 0;
-      color: #596652;
     }
+
+    .date {
+      margin-top: 18px;
+      color: #879477;
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .divider {
+      width: 120px;
+      height: 1px;
+      background: #a9a48d;
+      margin: 35px auto;
+    }
+
+    /* ARTICLE */
 
     main {
       max-width: 760px;
@@ -57,66 +108,69 @@
     }
 
     .article {
-      background: #f8f4eb;
-      border: 1px solid #d8d2c5;
-      padding: 50px 45px;
-      box-shadow: 0 4px 15px rgba(80, 80, 60, 0.08);
+      background: rgba(255, 252, 243, 0.65);
+      border: 1px solid #ddd5c4;
+      padding: 45px;
+      box-shadow: 0 8px 25px rgba(91, 98, 80, 0.07);
     }
 
-    .poem {
-      text-align: center;
-      font-size: 18px;
-      line-height: 2.1;
-      color: #596052;
+    .article p {
+      font-size: 17px;
+      line-height: 2;
+      margin: 0 0 30px;
     }
 
-    .stanza {
-      margin-bottom: 35px;
-    }
-
-    .stanza:last-child {
+    .article p:last-child {
       margin-bottom: 0;
     }
 
+    /* RETOUR */
+
     .back {
       text-align: center;
-      margin-top: 45px;
+      margin-top: 55px;
     }
 
     .back a {
-      color: #879477;
+      color: #68745e;
       text-decoration: none;
       font-style: italic;
-      font-size: 14px;
+      border-bottom: 1px solid #a9a48d;
+      padding-bottom: 4px;
     }
 
     .back a:hover {
-      color: #596652;
+      color: #9a8065;
     }
+
+    /* PIED DE PAGE */
 
     footer {
       text-align: center;
-      padding: 20px 20px 50px;
-      color: #9a9c91;
-      font-size: 13px;
+      padding: 60px 20px;
+      color: #879477;
+      font-size: 14px;
     }
+
+    /* TÉLÉPHONE */
 
     @media (max-width: 600px) {
 
-      header {
-        padding-top: 45px;
+      h1 {
+        font-size: 36px;
       }
 
-      h1 {
-        font-size: 31px;
+      .moon {
+        font-size: 65px;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 13px;
       }
 
       .article {
-        padding: 35px 20px;
-      }
-
-      .poem {
-        font-size: 17px;
+        padding: 28px;
       }
 
     }
@@ -125,10 +179,9 @@
 
 </head>
 
-
 <body>
 
- <nav>
+  <nav>
 
     <a href="../index.html">Accueil</a>
     <a href="../journal.html">Journal</a>
@@ -146,14 +199,15 @@
       ❀ ✿ ❀
     </div>
 
+    <h1>
+      Cousue de fil de soie
+    </h1>
+
+    <div class="date">
+      Dimanche 27 septembre 2026
+    </div>
 
     <div class="divider"></div>
-
-  </header>
-
-    <h1>
-       Cousue de fil de soie
-    </h1>
 
   </header>
 
@@ -162,62 +216,42 @@
 
     <article class="article">
 
-      <div class="poem">
+      <p>
+        Où conduit chacune de ces portes ?<br>
+        La grise est salée et la rouge acide.<br>
+        La bleue semble amère quand la blanche est douce.<br>
+        Acide, salée ou amère douceur.<br>
+        Les saveurs sont vides comme l'est le cœur.
+      </p>
 
+      <p>
+        Quelle porte ouvrir quand sont verrouillées<br>
+        toutes les serrures ?<br>
+        Où en sont les clés ?
+      </p>
 
-        <div class="stanza">
+      <p>
+        Quand le sel des larmes aura recouvert<br>
+        l'acide brûlure d'un cœur embrasé.<br>
+        <br>
+        Un jour,<br>
+        dans 7 ans,<br>
+        dans 10 ans,<br>
+        dans 107 ans,<br>
+        M'aimeras-tu ?
+      </p>
 
-          Où conduit chacune de ces portes ?<br>
+      <p>
+        <em>
+          « Et tu me dirais, peut-être, comme tu l'as déjà fait :<br>
+          "Bah logique, je vais pas te dire que je t'aime pas." »
+        </em>
+      </p>
 
-          La grise est salée et la rouge acide.<br>
-
-          La bleue semble amère quand la blanche est douce.<br>
-
-          Acide, salée ou amère douceur.<br>
-
-          Les saveurs sont vides comme l'est le cœur.
-
-        </div>
-
-
-        <div class="stanza">
-
-          Quelle porte ouvrir quand sont verrouillées<br>
-          toutes les serrures ?<br>
-
-          Où en sont les clés ?
-
-        </div>
-
-
-        <div class="stanza">
-
-          Quand le sel des larmes aura recouvert<br>
-          l'acide brûlure d'un cœur embrasé.<br>
-          
-          <br>
-          Un jour,  <br>
-          dans 7 ans, <br>
-          dans 10 ans,  <br>
-          dans 107 ans,  <br>
-          M'aimeras-tu? <br>
-
-            </div>
-          <div class="stanza">
-            <blockquote> Et tu me dirais, peut-être, comme tu l'as déjà fait :  <br>
-          <em>"Bah logique, je vais pas te dire que je t'aime pas."</em></blockquote>
-          </div>
-
-        <div class="stanza">
-
-          C'est ainsi que se terminent toutes les histoires.<br>
-
-          Car sans happy end, il n'y a pas d'espoir.
-
-        </div>
-
-
-      </div>
+      <p>
+        C'est ainsi que se terminent toutes les histoires.<br>
+        Car sans happy end, il n'y a pas d'espoir.
+      </p>
 
     </article>
 
@@ -230,14 +264,12 @@
 
     </div>
 
-
   </main>
 
 
   <footer>
     ☾ ✦ MoonBloomWitch ✦ ☽
   </footer>
-
 
 </body>
 
