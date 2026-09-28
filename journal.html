@@ -1,65 +1,432 @@
-<!DOCTYPE html> <html lang="fr"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Journal — MoonBloomWitch</title> <meta name="description" content="Le journal de MoonBloomWitch : pensées, souvenirs, fragments de vie et mots déposés dans la toile."> <style> * { box-sizing: border-box; } body { margin: 0; background: #f3eee3; color: #3f4035; font-family: Georgia, "Times New Roman", serif; } body::before { content: "✦ ✧ ✦ ✧ ✦"; display: block; text-align: center; color: #879477; font-size: 14px; letter-spacing: 12px; padding-top: 25px; } /* NAVIGATION */ nav { text-align: center; padding: 18px 10px; border-bottom: 1px solid #ddd5c4; background: rgba(255, 252, 243, 0.45); } nav a { color: #68745e; text-decoration: none; margin: 0 15px; font-size: 15px; letter-spacing: 1px; } nav a:hover { color: #9a8065; } /* EN-TÊTE */ header { text-align: center; padding: 55px 20px 60px; } .moon { font-size: 95px; color: #e8dfc9; text-shadow: 0 0 20px rgba(255, 249, 220, 0.9), 0 0 45px rgba(160, 153, 119, 0.35); line-height: 1; } .flowers { color: #879477; font-size: 28px; letter-spacing: 8px; margin: 20px 0; } h1 { font-size: 48px; font-weight: normal; color: #5b6250; letter-spacing: 3px; margin: 0; } .subtitle { margin-top: 18px; color: #8b806d; font-size: 18px; font-style: italic; } .divider { width: 120px; height: 1px; background: #a9a48d; margin: 35px auto; } /* JOURNAL */ main { max-width: 760px; margin: auto; padding: 0 25px 80px; } .intro { text-align: center; color: #8b806d; font-style: italic; font-size: 17px; line-height: 1.9; margin-bottom: 45px; } .journal-entry { background: rgba(255, 252, 243, 0.65); border: 1px solid #ddd5c4; padding: 35px; margin-bottom: 30px; box-shadow: 0 8px 25px rgba(91, 98, 80, 0.07); text-align: center; } .date { color: #879477; font-size: 13px; letter-spacing: 3px; text-transform: uppercase; } h2 { color: #5d6653; font-size: 30px; font-weight: normal; margin: 12px 0 18px; } .excerpt { font-size: 17px; line-height: 1.9; margin-bottom: 25px; } .read-more { color: #68745e; text-decoration: none; font-style: italic; border-bottom: 1px solid #a9a48d; padding-bottom: 4px; transition: color 0.3s ease; } .read-more:hover { color: #9a8065; } /* PIED DE PAGE */ footer { text-align: center; padding: 60px 20px; color: #879477; font-size: 14px; } /* TÉLÉPHONE */ @media (max-width: 600px) { h1 { font-size: 38px; } .moon { font-size: 75px; } nav a { margin: 0 7px; font-size: 13px; } .journal-entry { padding: 25px; } } </style> </head> <body> <nav>
-<a href="index.html">Accueil</a>
-<a href="journal.html">Journal</a>
-<a href="photos.html">Photos</a>
-<a href="a-propos.html">À propos</a>
+<!DOCTYPE html>
+<html lang="fr">
 
-</nav> <header>
-<div class="moon">☾</div>
+<head>
 
-<div class="flowers">
-  ❀ ✿ ❀
-</div>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<h1>
-  Mon journal
-</h1>
+<title>Journal — MoonBloomWitch</title>
 
-<div class="subtitle">
-  fragments de pensées, de souvenirs et de moi
-</div>
+<meta name="description" content="Le journal de MoonBloomWitch : pensées, souvenirs, fragments de vie et mots déposés dans la toile.">
 
-<div class="divider"></div>
+<style>
 
-</header> <main>
-<div class="intro">
-  Quelques morceaux de moi déposés ici,
-  quelque part entre les mots et les silences.
-</div>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f3eee3;
+  color: #3f4035;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+body::before {
+  content: "✦ ✧ ✦ ✧ ✦";
+  display: block;
+  text-align: center;
+  color: #879477;
+  font-size: 14px;
+  letter-spacing: 12px;
+  padding-top: 25px;
+}
+
+/* NAVIGATION */
+
+nav {
+  text-align: center;
+  padding: 18px 10px;
+  border-bottom: 1px solid #ddd5c4;
+  background: rgba(255, 252, 243, 0.45);
+}
+
+nav a {
+  color: #68745e;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+nav a:hover {
+  color: #9a8065;
+}
+
+/* EN-TÊTE */
+
+header {
+  text-align: center;
+  padding: 55px 20px 60px;
+}
+
+.moon {
+  font-size: 95px;
+  color: #e8dfc9;
+  text-shadow:
+    0 0 20px rgba(255, 249, 220, 0.9),
+    0 0 45px rgba(160, 153, 119, 0.35);
+  line-height: 1;
+}
+
+.flowers {
+  color: #879477;
+  font-size: 28px;
+  letter-spacing: 8px;
+  margin: 20px 0;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: normal;
+  color: #5b6250;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.subtitle {
+  margin-top: 18px;
+  color: #8b806d;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.divider {
+  width: 120px;
+  height: 1px;
+  background: #a9a48d;
+  margin: 35px auto;
+}
+
+/* JOURNAL */
+
+main {
+  max-width: 760px;
+  margin: auto;
+  padding: 0 25px 80px;
+}
+
+.intro {
+  text-align: center;
+  color: #8b806d;
+  font-style: italic;
+  font-size: 17px;
+  line-height: 1.9;
+  margin-bottom: 45px;
+}
+
+.journal-entry {
+  background: rgba(255, 252, 243, 0.65);
+  border: 1px solid #ddd5c4;
+  padding: 35px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 25px rgba(91, 98, 80, 0.07);
+  text-align: center;
+}
+
+.date {
+  color: #879477;
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #5d6653;
+  font-size: 30px;
+  font-weight: normal;
+  margin: 12px 0 18px;
+}
+
+.excerpt {
+  font-size: 17px;
+  line-height: 1.9;
+  margin-bottom: 25px;
+}
+
+.read-more {
+  color: #68745e;
+  text-decoration: none;
+  font-style: italic;
+  border-bottom: 1px solid #a9a48d;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: #9a8065;
+}
+
+/* PIED DE PAGE */
+
+footer {
+  text-align: center;
+  padding: 60px 20px;
+  color: #879477;
+  font-size: 14px;
+}
+
+/* TÉLÉPHONE */
+
+@media (max-width: 600px) {
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .moon {
+    font-size: 75px;
+  }
+
+  nav a {
+    margin: 0 7px;
+    font-size: 13px;
+  }
+
+  .journal-entry {
+    padding: 25px;
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+  <a href="index.html">Accueil</a>
+  <a href="journal.html">Journal</a>
+  <a href="photos.html">Photos</a>
+  <a href="a-propos.html">À propos</a>
+
+</nav>
 
 
+<header>
 
-    </article>
-    <!-- ARTICLE : MUTAGÈNES -->
+  <div class="moon">☾</div>
 
-    <article class="journal-entry">
+  <div class="flowers">
+    ❀ ✿ ❀
+  </div>
 
-      <div class="date">
-       Mercredi 02 septembre 2026
-      </div>
+  <h1>
+    Mon journal
+  </h1>
 
-      <h2>
-        Mutagènes
-      </h2>
+  <div class="subtitle">
+    fragments de pensées, de souvenirs et de moi
+  </div>
 
-      <p class="excerpt">
-        Les sentiments enveloppent mes couches d'âme
-        comme les sédiments recouvrent les strates terrestres.
-        Tout est mutable. Rien ne se perd, tout se transforme.
-      </p>
+  <div class="divider"></div>
 
-      <a href="articles/mutagenes.html" class="read-more">
-        Lire →
-      </a>
+</header>
 
-    </article>
+
+<main>
+
+  <div class="intro">
+    Quelques morceaux de moi déposés ici,
+    quelque part entre les mots et les silences.
+  </div>
+
+
+  <!-- ARTICLE : VIE ANTÉRIEURE 2 -->
+
+  <article class="journal-entry">
+
+    <div class="date">
+      Lundi 28 septembre 2026
+    </div>
+
+    <h2>
+      Vie antérieure 2
+    </h2>
+
+    <p class="excerpt">
+      Une petite enquête existentielle entre noisettes et pignons de pin...
+    </p>
+
+    <a href="articles/vie_anterieure_2.html" class="read-more">
+      Lire →
+    </a>
+
+  </article>
+
+
+  <!-- ARTICLE : À MON SEUL DÉSIR -->
+
+  <article class="journal-entry">
+
+    <div class="date">
+      Lundi 28 septembre 2026
+    </div>
+
+    <h2>
+      A mon seul désir...
+    </h2>
+
+    <p class="excerpt">
+      Lequel des 5 sens nous rassemblera? L'ouïe? La vue? Le toucher? Le goût? Ou l'odorat?
+    </p>
+
+    <a href="articles/a_mon_seul_desir.html" class="read-more">
+      Lire →
+    </a>
+
+  </article>
+
+
+  <!-- ARTICLE : LES LARMES DU CROCODILE -->
+
+  <article class="journal-entry">
+
+    <div class="date">
+      Dimanche 27 septembre 2026
+    </div>
+
+    <h2>
+      Les larmes du crocodile
+    </h2>
+
+    <p class="excerpt">
+      Tout à cacher...
+    </p>
+
+    <a href="articles/les_larmes_du_crocodile.html" class="read-more">
+      Lire →
+    </a>
+
+  </article>
+
+
+  <!-- ARTICLE : DISCRÉTION -->
+
+  <article class="journal-entry">
+
+    <div class="date">
+      Dimanche 27 septembre 2026
+    </div>
+
+    <h2>
+      Discrétion
+    </h2>
+
+    <p class="excerpt">
+      Une voix qui cherche à exister dans un monde trop bruyant, trop vif, trop dur.
+    </p>
+
+    <a href="articles/discretion.html" class="read-more">
+      Lire →
+    </a>
+
+  </article>
+
+
+  <!-- ARTICLE : DECRESCENDO -->
+
+  <article class="journal-entry">
+
+    <div class="date">
+      Mercredi 23 septembre 2026
+    </div>
+
+    <h2>
+      Decrescendo
+    </h2>
+
+    <p class="excerpt">
+      Des pensées murmurées à la brise
+    </p>
+
+    <a href="articles/decrescendo.html" class="read-more">
+      Lire →
+    </a>
+
+  </article>
+
+
+  <!-- ARTICLE : POUR LE MEILLEUR -->
+
+  <article class="journal-entry">
+
+    <div class="date">
+      Jeudi 17 septembre 2026
+    </div>
+
+    <h2>
+      Pour le meilleur
+    </h2>
+
+    <p class="excerpt">
+      Chaque seconde à tes côtés rend la vie plus douce
+    </p>
+
+    <a href="articles/pour_le_meilleur.html" class="read-more">
+      Lire →
+    </a>
+
+  </article>
+
+
+  <!-- ARTICLE : APOSTILLE -->
+
+  <article class="journal-entry">
+
+    <div class="date">
+      Vendredi 11 septembre 2026
+    </div>
+
+    <h2>
+      Apostille
+    </h2>
+
+    <p class="excerpt">
+      Douces réflexions d'un vendredi de septembre
+    </p>
+
+    <a href="articles/Apostille.html" class="read-more">
+      Lire →
+    </a>
+
+  </article>
+
+
+  <!-- ARTICLE : N'AI-JE ? -->
+
+  <article class="journal-entry">
+
+    <div class="date">
+      Samedi 05 septembre 2026
+    </div>
+
+    <h2>
+      N'ai-je ?
+    </h2>
+
+    <p class="excerpt">
+      N'ai-je plus aucune flèche à envoyer ?
+      Un message au vent, comme si quelqu'un
+      pouvait entendre...
+    </p>
+
+    <a href="articles/n-ai-je.html" class="read-more">
+      Lire →
+    </a>
+
+  </article>
+
 
   <!-- ARTICLE : UNE SAISON ÉTRANGE -->
 
   <article class="journal-entry">
 
     <div class="date">
-     Jeudi 03 septembre 2026
+      Jeudi 03 septembre 2026
     </div>
 
     <h2>
@@ -78,175 +445,139 @@
     </a>
 
   </article>
-<!-- ARTICLE : N'AI-JE ? -->
 
-<article class="journal-entry">
 
-  <div class="date">
-   Samedi 05 septembre 2026
-  </div>
-
-  <h2>
-    N'ai-je ?
-  </h2>
-
-  <p class="excerpt">
-    N'ai-je plus aucune flèche à envoyer ?
-    Un message au vent, comme si quelqu'un
-    pouvait entendre...
-  </p>
-
-  <a href="articles/n-ai-je.html" class="read-more">
-    Lire →
-  </a>
-
-</article>
-
-  <!-- ARTICLE : Apostille -->
-
-<article class="journal-entry">
-
-  <div class="date">
-   Vendredi 11 septembre 2026
-  </div>
-
-  <h2>
-   Apostille
-  </h2>
-
-  <p class="excerpt">
-    Douces réflexions d'un vendredi de septembre
-  </p>
-
-  <a href="articles/Apostille.html" class="read-more">
-    Lire →
-  </a>
-
-</article>
-
-  <!-- ARTICLE : Pour le meilleur -->
-
-<article class="journal-entry">
-
-  <div class="date">
-    Jeudi 17 septembre 2026
-  </div>
-
-  <h2>
-    Pour le meilleur
-  </h2>
-
-  <p class="excerpt">
-    Chaque seconde à tes côtés rend la vie plus douce
-  </p>
-
-  <a href="articles/pour_le_meilleur.html" class="read-more">
-    Lire →
-  </a>
-
-</article>
-<!-- ARTICLE : Decrescendo -->
-
-<article class="journal-entry">
-
-  <div class="date">
-  Mercredi 23 septembre 2026
-  </div>
-
-  <h2>
-   Decrescendo
-  </h2>
-
-  <p class="excerpt">
-  Des pensées murmurées à la brise
-  </p>
-
-  <a href="articles/decrescendo.html" class="read-more">
-    Lire →
-  </a>
-
-</article>
-
-  <!-- ARTICLE : DISCRETION -->
-
-<article class="journal-entry">
-
-  <div class="date">
-    Dimanche 27 septembre 2026
-  </div>
-
-  <h2>
-    Discrétion
-  </h2>
-
-  <p class="excerpt">
-   Une voix qui cherche à exister dans un monde trop bruyant, trop vif, trop dur.
-  </p>
-
-  <a href="articles/discretion.html" class="read-more">
-    Lire →
-  </a>
-
-</article>
+  <!-- ARTICLE : MUTAGÈNES -->
 
   <article class="journal-entry">
 
-  <div class="date">
-   Dimanche 27 septembre 2026
-  </div>
+    <div class="date">
+      Mercredi 02 septembre 2026
+    </div>
 
-  <h2>
-    Les larmes du crocodile
-  </h2>
+    <h2>
+      Mutagènes
+    </h2>
 
-  <p class="excerpt">
-    Tout à cacher...
-  </p>
+    <p class="excerpt">
+      Les sentiments enveloppent mes couches d'âme
+      comme les sédiments recouvrent les strates terrestres.
+      Tout est mutable. Rien ne se perd, tout se transforme.
+    </p>
 
-  <a href="articles/les_larmes_du_crocodile.html" class="read-more">
-    Lire →
-  </a>
+    <a href="articles/mutagenes.html" class="read-more">
+      Lire →
+    </a>
 
-</article>
-<article class="journal-entry">
+  </article>
 
-  <div class="date">
-   Lundi 28 septembre 2026
-  </div>
-
-  <h2>
-    A mon seul désir...
-  </h2>
-
-  <p class="excerpt">
-    Lequel des 5 sens nous rassemblera? L'ouïe? La vue? Le toucher? Le goût? Ou l'odorat?
-  </p>
-  <a href="articles/a_mon_seul_desir.html" class="read-more">
-  Lire →
-</a> </article>
-
-    <article>
-  <div class="date">
-   Lundi 28 septembre 2026
-  </div>
-
-  <h2>
-    Vie antérieure 2
-  </h2>
-
-  <p class="excerpt">
-   Une petite enquête existentielle entre noisettes et pignons de pin...
-  </p>
- <a href="articles/vie_anterieure_2.html" class="read-more">
-  Lire →
-</a>
-</article>
 </main>
 
- 
 
+<footer>
+  ☾ ✦ MoonBloomWitch ✦ ☽
+</footer>
+<script>
 
-</main> <footer>
-☾ ✦ MoonBloomWitch ✦ ☽
+const articles = document.querySelectorAll('.journal-entry');
+const articlesParPage = 8;
 
-</footer> </body> </html>
+let pageActuelle = 1;
+
+const nombreDePages = Math.ceil(articles.length / articlesParPage);
+
+function afficherPage(page) {
+
+  pageActuelle = page;
+
+  articles.forEach((article, index) => {
+
+    const debut = (page - 1) * articlesParPage;
+    const fin = debut + articlesParPage;
+
+    if (index >= debut && index < fin) {
+      article.style.display = 'block';
+    } else {
+      article.style.display = 'none';
+    }
+
+  });
+
+  afficherNavigation();
+
+}
+
+function afficherNavigation() {
+
+  let navigation = document.getElementById('pagination');
+
+  if (!navigation) {
+
+    navigation = document.createElement('div');
+    navigation.id = 'pagination';
+
+    navigation.style.textAlign = 'center';
+    navigation.style.marginTop = '45px';
+
+    document.querySelector('main').appendChild(navigation);
+
+  }
+
+  navigation.innerHTML = '';
+
+  if (pageActuelle > 1) {
+
+    const precedent = document.createElement('a');
+
+    precedent.href = '#';
+    precedent.textContent = '← Articles précédents';
+
+    precedent.style.color = '#68745e';
+    precedent.style.marginRight = '25px';
+
+    precedent.onclick = function(e) {
+      e.preventDefault();
+      afficherPage(pageActuelle - 1);
+      window.scrollTo(0, 0);
+    };
+
+    navigation.appendChild(precedent);
+
+  }
+
+  const page = document.createElement('span');
+
+  page.textContent = 'Page ' + pageActuelle + ' sur ' + nombreDePages;
+
+  page.style.color = '#879477';
+
+  navigation.appendChild(page);
+
+  if (pageActuelle < nombreDePages) {
+
+    const suivant = document.createElement('a');
+
+    suivant.href = '#';
+    suivant.textContent = 'Articles suivants →';
+
+    suivant.style.color = '#68745e';
+    suivant.style.marginLeft = '25px';
+
+    suivant.onclick = function(e) {
+      e.preventDefault();
+      afficherPage(pageActuelle + 1);
+      window.scrollTo(0, 0);
+    };
+
+    navigation.appendChild(suivant);
+
+  }
+
+}
+
+afficherPage(1);
+
+</script>
+</body>
+
+</html>
