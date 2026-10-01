@@ -270,7 +270,107 @@
     </div>
 
   </main>
+<script>
 
+const articles = document.querySelectorAll('.lou-entry');
+const articlesParPage = 5;
+
+let pageActuelle = 1;
+
+const nombreDePages = Math.ceil(articles.length / articlesParPage);
+
+function afficherPage(page) {
+
+  pageActuelle = page;
+
+  articles.forEach((article, index) => {
+
+    const debut = (page - 1) * articlesParPage;
+    const fin = debut + articlesParPage;
+
+    if (index >= debut && index < fin) {
+      article.style.display = 'block';
+    } else {
+      article.style.display = 'none';
+    }
+
+  });
+
+  afficherNavigation();
+
+}
+
+function afficherNavigation() {
+
+  let navigation = document.getElementById('pagination');
+
+  if (!navigation) {
+
+    navigation = document.createElement('div');
+    navigation.id = 'pagination';
+
+    navigation.style.textAlign = 'center';
+    navigation.style.marginTop = '45px';
+
+    document.querySelector('main').appendChild(navigation);
+
+  }
+
+  navigation.innerHTML = '';
+
+  if (pageActuelle > 1) {
+
+    const precedent = document.createElement('a');
+
+    precedent.href = '#';
+    precedent.textContent = '← Articles précédents';
+
+    precedent.style.color = '#aaa89f';
+    precedent.style.marginRight = '25px';
+
+    precedent.onclick = function(e) {
+      e.preventDefault();
+      afficherPage(pageActuelle - 1);
+      window.scrollTo(0, 0);
+    };
+
+    navigation.appendChild(precedent);
+
+  }
+
+  const page = document.createElement('span');
+
+  page.textContent = 'Page ' + pageActuelle + ' sur ' + nombreDePages;
+
+  page.style.color = '#aaa89f';
+
+  navigation.appendChild(page);
+
+  if (pageActuelle < nombreDePages) {
+
+    const suivant = document.createElement('a');
+
+    suivant.href = '#';
+    suivant.textContent = 'Articles suivants →';
+
+    suivant.style.color = '#aaa89f';
+    suivant.style.marginLeft = '25px';
+
+    suivant.onclick = function(e) {
+      e.preventDefault();
+      afficherPage(pageActuelle + 1);
+      window.scrollTo(0, 0);
+    };
+
+    navigation.appendChild(suivant);
+
+  }
+
+}
+
+afficherPage(1);
+
+</script>
 </body>
 
 </html>
