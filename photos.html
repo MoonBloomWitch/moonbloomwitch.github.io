@@ -113,4 +113,98 @@
  <footer>
 ☾ ✦ MoonBloomWitch ✦ ☽
 
-</footer> </body> </html>
+</footer>
+<script>
+const photos = document.querySelectorAll('.photo');
+const photosParPage = 10;
+
+let pageActuelle = 1;
+
+const nombreDePages = Math.ceil(photos.length / photosParPage);
+
+function afficherPage(page) {
+
+  pageActuelle = page;
+
+  const debut = (page - 1) * photosParPage;
+  const fin = debut + photosParPage;
+
+  photos.forEach((photo, index) => {
+    if (index >= debut && index < fin) {
+      photo.style.display = '';
+    } else {
+      photo.style.display = 'none';
+    }
+  });
+
+  afficherPagination();
+}
+
+function afficherPagination() {
+
+  const pagination = document.getElementById('pagination');
+
+  pagination.innerHTML = '';
+
+  if (nombreDePages <= 1) {
+    return;
+  }
+
+  if (pageActuelle > 1) {
+    const precedent = document.createElement('a');
+    precedent.href = '#';
+    precedent.textContent = '← Plus récentes';
+    precedent.onclick = function(e) {
+      e.preventDefault();
+      afficherPage(pageActuelle - 1);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+    pagination.appendChild(precedent);
+  }
+
+  for (let i = 1; i <= nombreDePages; i++) {
+
+    if (i === pageActuelle) {
+
+      const page = document.createElement('span');
+      page.className = 'current';
+      page.textContent = i;
+      pagination.appendChild(page);
+
+    } else {
+
+      const lien = document.createElement('a');
+      lien.href = '#';
+      lien.textContent = i;
+
+      lien.onclick = function(e) {
+        e.preventDefault();
+        afficherPage(i);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
+
+      pagination.appendChild(lien);
+    }
+  }
+
+  if (pageActuelle < nombreDePages) {
+
+    const suivant = document.createElement('a');
+    suivant.href = '#';
+    suivant.textContent = 'Plus anciennes →';
+
+    suivant.onclick = function(e) {
+      e.preventDefault();
+      afficherPage(pageActuelle + 1);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    pagination.appendChild(suivant);
+  }
+}
+
+afficherPage(1);
+</script>
+
+</body>
+</html>
