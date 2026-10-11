@@ -1,4 +1,43 @@
-<!DOCTYPE html> <html lang="fr"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Mes photos — MoonBloomWitch</title> <meta name="description" content="Quelques souvenirs et images de MoonBloomWitch."> <style> * { box-sizing: border-box; } body { margin: 0; background: #f3eee3; color: #3f4035; font-family: Georgia, "Times New Roman", serif; } body::before { content: "✦ ✧ ✦ ✧ ✦"; display: block; text-align: center; color: #879477; font-size: 14px; letter-spacing: 12px; padding-top: 25px; } nav { text-align: center; padding: 18px; border-bottom: 1px solid #ddd5c4; } nav a { color: #68745e; text-decoration: none; margin: 0 15px; font-size: 15px; } nav a:hover { color: #9a8065; } header { text-align: center; padding: 50px 20px 40px; } .moon { font-size: 90px; color: #e8dfc9; text-shadow: 0 0 20px rgba(255, 249, 220, 0.9), 0 0 45px rgba(160, 153, 119, 0.35); } .flowers { color: #879477; font-size: 28px; letter-spacing: 8px; margin: 20px 0; } h1 { font-size: 48px; font-weight: normal; color: #5b6250; letter-spacing: 3px; } .intro { text-align: center; color: #8b806d; font-style: italic; margin-bottom: 40px; } main { max-width: 1000px; margin: auto; padding: 0 25px 70px; } .photo-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; } .photo { background: rgba(255, 252, 243, 0.7); padding: 12px; border: 1px solid #ddd5c4; box-shadow: 0 8px 25px rgba(91, 98, 80, 0.08); } .photo img { width: 100%; height: 350px; object-fit: cover; display: block; } .caption { text-align: center; color: #8b806d; font-style: italic; padding: 15px 5px 5px; } footer { text-align: center; padding: 60px 20px; color: #879477; font-size: 14px; } @media (max-width: 650px) { h1 { font-size: 38px; } .photo-grid { grid-template-columns: 1fr; } .photo img { height: 300px; } } </style> </head> <body> <nav>
+<!DOCTYPE html> <html lang="fr"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Mes photos — MoonBloomWitch</title>
+  <meta name="description" content="Quelques souvenirs et images de MoonBloomWitch."> 
+  <style> * { box-sizing: border-box; } 
+    body { margin: 0; background: #f3eee3; color: #3f4035; font-family: Georgia, "Times New Roman", serif; } 
+    body::before { content: "✦ ✧ ✦ ✧ ✦"; display: block; text-align: center; color: #879477; font-size: 14px; letter-spacing: 12px; padding-top: 25px; } 
+    nav { text-align: center; padding: 18px; border-bottom: 1px solid #ddd5c4; } nav a { color: #68745e; text-decoration: none; margin: 0 15px; font-size: 15px; }
+    nav a:hover { color: #9a8065; } header { text-align: center; padding: 50px 20px 40px; } 
+    .moon { font-size: 90px; color: #e8dfc9; text-shadow: 0 0 20px rgba(255, 249, 220, 0.9), 0 0 45px rgba(160, 153, 119, 0.35); } 
+    .flowers { color: #879477; font-size: 28px; letter-spacing: 8px; margin: 20px 0; } h1 { font-size: 48px; font-weight: normal; color: #5b6250; letter-spacing: 3px; } 
+    .intro { text-align: center; color: #8b806d; font-style: italic; margin-bottom: 40px; } 
+    main { max-width: 1000px; margin: auto; padding: 0 25px 70px; } 
+    .photo-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; } 
+    .photo { background: rgba(255, 252, 243, 0.7); padding: 12px; border: 1px solid #ddd5c4; box-shadow: 0 8px 25px rgba(91, 98, 80, 0.08); }
+    .photo img { width: 100%; height: 350px; object-fit: cover; display: block; } .caption { text-align: center; color: #8b806d; font-style: italic; padding: 15px 5px 5px; }
+    footer { text-align: center; padding: 60px 20px; color: #879477; font-size: 14px; } @media (max-width: 650px) 
+    { h1 { font-size: 38px; } .photo-grid { grid-template-columns: 1fr; } .photo img { height: 300px; } }
+  
+  .pagination {
+  text-align: center;
+  margin-top: 45px;
+  padding-top: 20px;
+}
+
+.pagination a,
+.pagination span {
+  color: #68745e;
+  text-decoration: none;
+  margin: 0 10px;
+  font-style: italic;
+}
+
+.pagination a:hover {
+  color: #9a8065;
+}
+
+.pagination .current {
+  font-weight: bold;
+}
+  
+  </style> </head> <body> <nav>
 <a href="index.html">Accueil</a>
 <a href="journal.html">Journal</a>
 <a href="photos.html">Photos</a>
@@ -136,7 +175,7 @@
   </div>
 
 </div>
-
+<div id="pagination" class="pagination"></div>
 </main>
  <footer>
 ☾ ✦ MoonBloomWitch ✦ ☽
