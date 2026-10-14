@@ -1,68 +1,294 @@
 
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Des plumes et des larmes — MoonBloomWitch</title>
-  <meta name="description" content="Certaines vies valent-elles plus que d'autres? Un texte sur la perte d'une poule.">
-  <link rel="stylesheet" href="../style.css">
+
+  <meta name="description" content="Certaines vies valent-elles plus que d'autres ? Un texte sur la perte d'une poule.">
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f3eee3;
+      color: #3f4035;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    body::before {
+      content: "✦ ✧ ✦ ✧ ✦";
+      display: block;
+      text-align: center;
+      color: #879477;
+      font-size: 14px;
+      letter-spacing: 12px;
+      padding-top: 25px;
+    }
+
+    /* NAVIGATION */
+
+    nav {
+      text-align: center;
+      padding: 18px 10px;
+      border-bottom: 1px solid #ddd5c4;
+      background: rgba(255, 252, 243, 0.45);
+    }
+
+    nav a {
+      color: #68745e;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+
+    nav a:hover {
+      color: #9a8065;
+    }
+
+    /* EN-TÊTE */
+
+    header {
+      text-align: center;
+      padding: 55px 20px 45px;
+    }
+
+    .moon {
+      font-size: 75px;
+      color: #e8dfc9;
+      text-shadow:
+        0 0 20px rgba(255, 249, 220, 0.9),
+        0 0 45px rgba(160, 153, 119, 0.35);
+      line-height: 1;
+    }
+
+    .flowers {
+      color: #879477;
+      font-size: 24px;
+      letter-spacing: 8px;
+      margin: 20px 0;
+    }
+
+    h1 {
+      font-size: 42px;
+      font-weight: normal;
+      color: #5b6250;
+      letter-spacing: 3px;
+      margin: 0;
+    }
+
+    .date {
+      margin-top: 18px;
+      color: #879477;
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .divider {
+      width: 120px;
+      height: 1px;
+      background: #a9a48d;
+      margin: 35px auto;
+    }
+
+    /* ARTICLE */
+
+    main {
+      max-width: 760px;
+      margin: auto;
+      padding: 0 25px 80px;
+    }
+
+    .article {
+      background: rgba(255, 252, 243, 0.65);
+      border: 1px solid #ddd5c4;
+      padding: 45px;
+      box-shadow: 0 8px 25px rgba(91, 98, 80, 0.07);
+    }
+
+    .article p {
+      font-size: 17px;
+      line-height: 2;
+      margin: 0 0 30px;
+    }
+
+    .article p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* RETOUR */
+
+    .back {
+      text-align: center;
+      margin-top: 55px;
+    }
+
+    .back a {
+      color: #68745e;
+      text-decoration: none;
+      font-style: italic;
+      border-bottom: 1px solid #a9a48d;
+      padding-bottom: 4px;
+    }
+
+    .back a:hover {
+      color: #9a8065;
+    }
+
+    /* PIED DE PAGE */
+
+    footer {
+      text-align: center;
+      padding: 60px 20px;
+      color: #879477;
+      font-size: 14px;
+    }
+
+    /* TÉLÉPHONE */
+
+    @media (max-width: 600px) {
+
+      h1 {
+        font-size: 36px;
+      }
+
+      .moon {
+        font-size: 65px;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 13px;
+      }
+
+      .article {
+        padding: 28px;
+      }
+
+    }
+
+  </style>
+
 </head>
 
 <body>
 
+  <nav>
+    <a href="../index.html">Accueil</a>
+    <a href="../journal.html">Journal</a>
+    <a href="../photos.html">Photos</a>
+    <a href="../a-propos.html">À propos</a>
+  </nav>
+
   <header>
-    <h1>MoonBloomWitch</h1>
-    <nav>
-      <a href="../index.html">Accueil</a>
-      <a href="../journal.html">Journal</a>
-      <a href="../photos.html">Photos</a>
-      <a href="../a-propos.html">À propos</a>
-    </nav>
+
+    <div class="moon">☾</div>
+
+    <div class="flowers">
+      ❀ ✿ ❀
+    </div>
+
+    <h1>
+      Des plumes et des larmes
+    </h1>
+
+    <div class="date">
+      Mercredi 14 octobre 2026
+    </div>
+
+    <div class="divider"></div>
+
   </header>
 
   <main>
-    <article class="journal-entry">
-      <h2>Une poule est morte</h2>
 
-      <p>On a une poule qui est morte aujourd'hui.<br>
-      C'est tellement dur, je crois que je ne m'y habituerai jamais.</p>
+    <article class="article">
 
-      <p>Cela faisait 2 semaines qu'elle ne pondait plus. Je me suis interrogée, mais je ne voyais pas de signes de faiblesse. Et puis on a l'habitude de se faire piquer des œufs par les campagnols.</p>
+      <p>
+        On a une poule qui est morte aujourd'hui.<br>
+        C'est tellement dur, je crois que je ne m'y habituerai jamais.
+      </p>
 
-      <p>Je ne me suis pas inquiétée. En rentrant lundi, je vais donner les restes du goûter au poulailler. J'appelle, comme d'habitude. Mais elle ne vient pas. L'autre accourt. Mais elle, non. La poule rousse. Alors que d'habitude elle arrive rapidement.</p>
+      <p>
+        Cela faisait 2 semaines qu'elle ne pondait plus. Je me suis interrogée, mais je ne voyais pas de signes de faiblesse. Et puis on a l'habitude de se faire piquer des œufs par les campagnols.
+      </p>
 
-      <p>J'entends des petits bruits étouffés à l'intérieur du poulailler. J'ouvre la porte et je la vois allongée au sol. Le cou mou et la tête en arrière. Elle n'a qu'un seul œil ouvert. Et elle essayait de se lever pour venir. Elle n'y arrivait pas.</p>
+      <p>
+        Je ne me suis pas inquiétée. En rentrant lundi, je vais donner les restes du goûter au poulailler. J'appelle, comme d'habitude. Mais elle ne vient pas. L'autre accourt. Mais elle, non. La poule rousse. Alors que d'habitude elle arrive rapidement.
+      </p>
 
-      <p>Je lâche tout et je la prends dans mes bras. J'appelle à l'aide. On s'aperçoit alors que le réservoir d'eau était vide. On pense d'abord à une déshydratation alors on lui donne à boire.</p>
+      <p>
+        J'entends des petits bruits étouffés à l'intérieur du poulailler. J'ouvre la porte et je la vois allongée au sol. Le cou mou et la tête en arrière. Elle n'a qu'un seul œil ouvert. Et elle essayait de se lever pour venir. Elle n'y arrivait pas.
+      </p>
 
-      <p>On l'installe dans le coin où on isole les poules malades. On l'enroule dans une serviette pour qu'elle passe la nuit. On lui laisse de l'eau sucrée.</p>
+      <p>
+        Je lâche tout et je la prends dans mes bras. J'appelle à l'aide. On s'aperçoit alors que le réservoir d'eau était vide. On pense d'abord à une déshydratation alors on lui donne à boire.
+      </p>
 
-      <p>Hier matin, elle était encore vivante. Elle semblait avoir repris un peu de force, elle arrivait à boire toute seule. Le soir je rentre du travail, elle pouvait rebouger les pattes et a pu boire et manger un peu.</p>
+      <p>
+        On l'installe dans le coin où on isole les poules malades. On l'enroule dans une serviette pour qu'elle passe la nuit. On lui laisse de l'eau sucrée.
+      </p>
 
-      <p>Ce matin, Elle s'est mise debout, buvait toute seule. Elle réagissait à notre voix. Je pensais qu'elle allait mieux. Je l'ai surveillé toute la journée, mais elle a finit par s'allonger. Sa respiration était compliquée et elle bavait.</p>
+      <p>
+        Hier matin, elle était encore vivante. Elle semblait avoir repris un peu de force, elle arrivait à boire toute seule. Le soir je rentre du travail, elle pouvait rebouger les pattes et a pu boire et manger un peu.
+      </p>
 
-      <p>Elle n'arrivait plus à se relever. Son cou était à nouveau tout mou et elle fermait les yeux. Elle essayait de les ouvrir mais c'était trop dur. On a voulu lui donner à boire.</p>
+      <p>
+        Ce matin, Elle s'est mise debout, buvait toute seule. Elle réagissait à notre voix. Je pensais qu'elle allait mieux. Je l'ai surveillé toute la journée, mais elle a finit par s'allonger. Sa respiration était compliquée et elle bavait.
+      </p>
 
-      <p>En faisant ce geste, on savait que c'était peut-être la fin. Car les poules peuvent faire une fausse route si elles avalent l'eau du mauvais côté. Cela faisait plusieurs heures qu'elle ne prenait plus l'eau dans son bec, même quand je l'y aidais.</p>
+      <p>
+        Elle n'arrivait plus à se relever. Son cou était à nouveau tout mou et elle fermait les yeux. Elle essayait de les ouvrir mais c'était trop dur. On a voulu lui donner à boire.
+      </p>
 
-      <p>Et bien c'est ce qui s'est passé. Elle a fait une fausse route. C'est peut-être mieux ainsi, vu son état de faiblesse, elle souffrait. Sa respiration était comme empêchée.</p>
+      <p>
+        En faisant ce geste, on savait que c'était peut-être la fin. Car les poules peuvent faire une fausse route si elles avalent l'eau du mauvais côté. Cela faisait plusieurs heures qu'elle ne prenait plus l'eau dans son bec, même quand je l'y aidais.
+      </p>
 
-      <p>Mais elle a essayé de nous avertir. Elle a râlé le plus qu'elle pouvait sans sa voix qu'elle n'avait plus depuis 2 jours. Je l'avais dans mes bras lorsqu'elle a laissé la vie partir. Lorsqu'elle a lâché le combat. Mais sa souffrance était telle, qu'il fallait qu'on fasse quelque chose. Soit elle mourrait là, alors qu'on essayait de la sauver, soit elle mourrait de faim ou de soif car elle ne pouvait plus s'alimenter ni boire seule.</p>
+      <p>
+        Et bien c'est ce qui s'est passé. Elle a fait une fausse route. C'est peut-être mieux ainsi, vu son état de faiblesse, elle souffrait. Sa respiration était comme empêchée.
+      </p>
 
-      <p>Sentir la vie s'échapper d'un être qu'on a dans les bras. Je l'ai caressée lorsque j'ai vu qu'elle convulsait de ne plus pouvoir respirer. Je lui ai posé la main sur la tête doucement, sereinement.<br>
-      Une fois qu'elle était morte je l'ai reposée.</p>
+      <p>
+        Mais elle a essayé de nous avertir. Elle a râlé le plus qu'elle pouvait sans sa voix qu'elle n'avait plus depuis 2 jours. Je l'avais dans mes bras lorsqu'elle a laissé la vie partir. Lorsqu'elle a lâché le combat. Mais sa souffrance était telle, qu'il fallait qu'on fasse quelque chose. Soit elle mourrait là, alors qu'on essayait de la sauver, soit elle mourrait de faim ou de soif car elle ne pouvait plus s'alimenter ni boire seule.
+      </p>
 
-      <p>Je suis allée me laver les mains et j'ai pleuré.</p>
+      <p>
+        Sentir la vie s'échapper d'un être qu'on a dans les bras. Je l'ai caressée lorsque j'ai vu qu'elle convulsait de ne plus pouvoir respirer. Je lui ai posé la main sur la tête doucement, sereinement.<br>
+        Une fois qu'elle était morte je l'ai reposée.
+      </p>
 
-      <p>On en a perdu 11 durant ces 3 dernières années, des poules. Les prédateurs, les poux rouges... A chaque fois c'est si difficile. Je crois que je ne m'y ferais jamais.</p>
+      <p>
+        Je suis allée me laver les mains et j'ai pleuré.
+      </p>
 
-      <p><a href="../journal.html" id="retour-journal">← Retour au journal</a></p>
+      <p>
+        On en a perdu 11 durant ces 3 dernières années, des poules. Les prédateurs, les poux rouges... A chaque fois c'est si difficile. Je crois que je ne m'y ferais jamais.
+      </p>
+
     </article>
+
+    <div class="back">
+
+      <a href="../journal.html" id="retour-journal">
+        ← Retour au journal
+      </a>
+
+    </div>
+
   </main>
 
   <footer>
-    <p>© MoonBloomWitch</p>
+    ☾ ✦ MoonBloomWitch ✦ ☽
   </footer>
 
   <script>
@@ -76,4 +302,5 @@
   </script>
 
 </body>
+
 </html>
