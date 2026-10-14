@@ -254,9 +254,19 @@ J'ai besoin de quiétude, pour apaiser mon âme.
 
     <div class="back">
 
-      <a href="../journal.html">
-        ← Retour au journal
-      </a>
+     <a href="../journal.html" id="retour-journal">
+  ← Retour au journal
+</a>
+
+<script>
+const parametres = new URLSearchParams(window.location.search);
+const pageJournal = parametres.get('pageJournal');
+
+if (pageJournal && /^\d+$/.test(pageJournal)) {
+  document.getElementById('retour-journal').href =
+    '../journal.html?pageJournal=' + pageJournal;
+}
+</script>
 
     </div>
 
