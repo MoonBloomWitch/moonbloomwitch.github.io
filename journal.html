@@ -646,6 +646,7 @@ footer {
 <footer>
   ☾ ✦ MoonBloomWitch ✦ ☽
 </footer>
+
 <script>
 const articles = document.querySelectorAll('.journal-entry');
 const articlesParPage = 8;
@@ -667,8 +668,12 @@ function preparerLiensArticles() {
   });
 }
 
+// Afficher les articles de la page choisie
 function afficherPage(page) {
-  pageActuelle = Math.min(Math.max(page, 1), nombreDePages);
+  pageActuelle = Math.min(
+    Math.max(page, 1),
+    nombreDePages
+  );
 
   const debut = (pageActuelle - 1) * articlesParPage;
   const fin = debut + articlesParPage;
@@ -682,6 +687,7 @@ function afficherPage(page) {
   afficherNavigation();
 }
 
+// Créer la navigation du journal
 function afficherNavigation() {
   let navigation = document.getElementById('pagination');
 
@@ -695,12 +701,14 @@ function afficherNavigation() {
 
   navigation.innerHTML = '';
 
+  // Bouton Articles précédents
   if (pageActuelle > 1) {
     const precedent = document.createElement('a');
+
     precedent.href = '#';
     precedent.textContent = '← Articles précédents';
     precedent.style.color = '#68745e';
-    precedent.style.marginRight = '25px';
+    precedent.style.marginRight = '20px';
 
     precedent.onclick = function(e) {
       e.preventDefault();
@@ -711,18 +719,50 @@ function afficherNavigation() {
     navigation.appendChild(precedent);
   }
 
-  const indication = document.createElement('span');
+  // Numéros de pages cliquables
+  for (let numero = 1; numero <= nombreDePages; numero++) {
+    const lien = document.createElement('a');
+
+    lien.href = '#';
+    lien.textContent = numero;
+    lien.style.color = '#68745e';
+    lien.style.margin = '0 8px';
+    lien.style.textDecoration = 'none';
+
+    // Mettre en évidence la page actuelle
+    if (numero === pageActuelle) {
+      lien.style.fontWeight = 'bold';
+      lien.style.textDecoration = 'underline';
+    }
+
+    lien.onclick = function(e) {
+      e.preventDefault();
+      afficherPage(numero);
+      window.scrollTo(0, 0);
+    };
+
+    navigation.appendChild(lien);
+  }
+
+  // Indication de la page actuelle
+  const indication = document.createElement('div');
+
   indication.textContent =
     'Page ' + pageActuelle + ' sur ' + nombreDePages;
+
   indication.style.color = '#879477';
+  indication.style.marginTop = '12px';
+
   navigation.appendChild(indication);
 
+  // Bouton Articles suivants
   if (pageActuelle < nombreDePages) {
     const suivant = document.createElement('a');
+
     suivant.href = '#';
     suivant.textContent = 'Articles suivants →';
     suivant.style.color = '#68745e';
-    suivant.style.marginLeft = '25px';
+    suivant.style.marginLeft = '20px';
 
     suivant.onclick = function(e) {
       e.preventDefault();
@@ -734,12 +774,15 @@ function afficherNavigation() {
   }
 }
 
-// Restaurer la page demandée dans l'adresse du journal
+// Restaurer la page demandée au retour d'un article
 const parametres = new URLSearchParams(window.location.search);
 const pageDemandee = parseInt(parametres.get('pageJournal'), 10);
 
-afficherPage(Number.isInteger(pageDemandee) ? pageDemandee : 1);
+afficherPage(
+  Number.isInteger(pageDemandee) ? pageDemandee : 1
+);
 </script>
+
 </body>
 
 </html>
