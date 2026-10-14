@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Des plumes et des larmes — MoonBloomWitch</title>
+  <meta name="description" content="Certaines vies valent-elles plus que d'autres? Un texte sur la perte d'une poule.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>MoonBloomWitch</h1>
+    <nav>
+      <a href="../index.html">Accueil</a>
+      <a href="../journal.html">Journal</a>
+      <a href="../photos.html">Photos</a>
+      <a href="../a-propos.html">À propos</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="journal-entry">
+      <h2>Une poule est morte</h2>
+
+      <p>On a une poule qui est morte aujourd'hui.<br>
+      C'est tellement dur, je crois que je ne m'y habituerai jamais.</p>
+
+      <p>Cela faisait 2 semaines qu'elle ne pondait plus. Je me suis interrogée, mais je ne voyais pas de signes de faiblesse. Et puis on a l'habitude de se faire piquer des œufs par les campagnols.</p>
+
+      <p>Je ne me suis pas inquiétée. En rentrant lundi, je vais donner les restes du goûter au poulailler. J'appelle, comme d'habitude. Mais elle ne vient pas. L'autre accourt. Mais elle, non. La poule rousse. Alors que d'habitude elle arrive rapidement.</p>
+
+      <p>J'entends des petits bruits étouffés à l'intérieur du poulailler. J'ouvre la porte et je la vois allongée au sol. Le cou mou et la tête en arrière. Elle n'a qu'un seul œil ouvert. Et elle essayait de se lever pour venir. Elle n'y arrivait pas.</p>
+
+      <p>Je lâche tout et je la prends dans mes bras. J'appelle à l'aide. On s'aperçoit alors que le réservoir d'eau était vide. On pense d'abord à une déshydratation alors on lui donne à boire.</p>
+
+      <p>On l'installe dans le coin où on isole les poules malades. On l'enroule dans une serviette pour qu'elle passe la nuit. On lui laisse de l'eau sucrée.</p>
+
+      <p>Hier matin, elle était encore vivante. Elle semblait avoir repris un peu de force, elle arrivait à boire toute seule. Le soir je rentre du travail, elle pouvait rebouger les pattes et a pu boire et manger un peu.</p>
+
+      <p>Ce matin, Elle s'est mise debout, buvait toute seule. Elle réagissait à notre voix. Je pensais qu'elle allait mieux. Je l'ai surveillé toute la journée, mais elle a finit par s'allonger. Sa respiration était compliquée et elle bavait.</p>
+
+      <p>Elle n'arrivait plus à se relever. Son cou était à nouveau tout mou et elle fermait les yeux. Elle essayait de les ouvrir mais c'était trop dur. On a voulu lui donner à boire.</p>
+
+      <p>En faisant ce geste, on savait que c'était peut-être la fin. Car les poules peuvent faire une fausse route si elles avalent l'eau du mauvais côté. Cela faisait plusieurs heures qu'elle ne prenait plus l'eau dans son bec, même quand je l'y aidais.</p>
+
+      <p>Et bien c'est ce qui s'est passé. Elle a fait une fausse route. C'est peut-être mieux ainsi, vu son état de faiblesse, elle souffrait. Sa respiration était comme empêchée.</p>
+
+      <p>Mais elle a essayé de nous avertir. Elle a râlé le plus qu'elle pouvait sans sa voix qu'elle n'avait plus depuis 2 jours. Je l'avais dans mes bras lorsqu'elle a laissé la vie partir. Lorsqu'elle a lâché le combat. Mais sa souffrance était telle, qu'il fallait qu'on fasse quelque chose. Soit elle mourrait là, alors qu'on essayait de la sauver, soit elle mourrait de faim ou de soif car elle ne pouvait plus s'alimenter ni boire seule.</p>
+
+      <p>Sentir la vie s'échapper d'un être qu'on a dans les bras. Je l'ai caressée lorsque j'ai vu qu'elle convulsait de ne plus pouvoir respirer. Je lui ai posé la main sur la tête doucement, sereinement.<br>
+      Une fois qu'elle était morte je l'ai reposée.</p>
+
+      <p>Je suis allée me laver les mains et j'ai pleuré.</p>
+
+      <p>On en a perdu 11 durant ces 3 dernières années, des poules. Les prédateurs, les poux rouges... A chaque fois c'est si difficile. Je crois que je ne m'y ferais jamais.</p>
+
+      <p><a href="../journal.html" id="retour-journal">← Retour au journal</a></p>
+    </article>
+  </main>
+
+  <footer>
+    <p>© MoonBloomWitch</p>
+  </footer>
+
+  <script>
+    const parametres = new URLSearchParams(window.location.search);
+    const pageJournal = parametres.get('pageJournal');
+
+    if (pageJournal && /^\d+$/.test(pageJournal)) {
+      document.getElementById('retour-journal').href =
+        '../journal.html?pageJournal=' + pageJournal;
+    }
+  </script>
+
+</body>
+</html>
