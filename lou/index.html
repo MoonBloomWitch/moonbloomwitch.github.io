@@ -60,7 +60,7 @@
       padding: 35px 0;
     }
 
-    .lou-entry:last-child {
+    .lou-entry:last-of-type {
       border-bottom: 1px solid #353a32;
     }
 
@@ -95,6 +95,39 @@
       color: #aaa89f;
     }
 
+    /* PAGINATION */
+
+    #pagination {
+      text-align: center;
+      margin-top: 45px;
+      padding-top: 25px;
+      border-top: 1px solid #353a32;
+    }
+
+    #pagination a,
+    #pagination span {
+      display: inline-block;
+      margin: 5px 9px;
+      color: #aaa89f;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    #pagination a:hover {
+      color: #d0cec5;
+    }
+
+    #pagination .page-active {
+      color: #d0cec5;
+      border-bottom: 1px solid #8f9588;
+      padding-bottom: 3px;
+    }
+
+    #pagination .navigation {
+      color: #8f9588;
+      font-style: italic;
+    }
+
     .back {
       text-align: center;
       margin-top: 60px;
@@ -111,26 +144,30 @@
       color: #aaa89f;
     }
 
-    /* PAGINATION */
+    @media (max-width: 600px) {
 
-    #pagination {
-      text-align: center;
-      margin-top: 45px;
-      padding-top: 20px;
-    }
+      header {
+        padding-top: 50px;
+      }
 
-    #pagination a {
-      color: #aaa89f;
-      text-decoration: none;
-      font-style: italic;
-    }
+      h1 {
+        font-size: 36px;
+      }
 
-    #pagination a:hover {
-      color: #d0cec5;
-    }
+      main {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
 
-    #pagination span {
-      color: #777d70;
+      .lou-entry {
+        padding: 28px 0;
+      }
+
+      #pagination a,
+      #pagination span {
+        margin: 5px 6px;
+      }
+
     }
 
   </style>
@@ -154,7 +191,6 @@
 
   <main>
 
-
     <!-- ARTICLE : SI TU LIS MES PENSÉES -->
 
     <article class="lou-entry">
@@ -163,17 +199,13 @@
         Jeudi 1 octobre 2026
       </div>
 
-      <h2>
-        Si tu lis mes pensées
-      </h2>
+      <h2>Si tu lis mes pensées</h2>
 
       <p class="excerpt">
         Quand le cœur, le corps et la tête ne racontent pas tout à fait la même histoire.
       </p>
 
-      <a href="les_ombres.html" class="read-more">
-        Lire →
-      </a>
+      <a href="les_ombres.html" class="read-more">Lire →</a>
 
     </article>
 
@@ -186,17 +218,13 @@
         Mercredi 23 septembre 2026
       </div>
 
-      <h2>
-        Vie antérieure
-      </h2>
+      <h2>Vie antérieure</h2>
 
       <p class="excerpt">
         Depuis combien de vies, on se connaît ?
       </p>
 
-      <a href="vie_anterieure.html" class="read-more">
-        Lire →
-      </a>
+      <a href="vie_anterieure.html" class="read-more">Lire →</a>
 
     </article>
 
@@ -209,17 +237,13 @@
         Vendredi 11 septembre 2026
       </div>
 
-      <h2>
-        Chouette
-      </h2>
+      <h2>Chouette</h2>
 
       <p class="excerpt">
         Comme un cri dans la nuit...
       </p>
 
-      <a href="Chouette.html" class="read-more">
-        Lire →
-      </a>
+      <a href="Chouette.html" class="read-more">Lire →</a>
 
     </article>
 
@@ -232,17 +256,13 @@
         Dimanche 6 septembre 2026
       </div>
 
-      <h2>
-        Réconfort
-      </h2>
+      <h2>Réconfort</h2>
 
       <p class="excerpt">
         Des mots pour comprendre.
       </p>
 
-      <a href="reconfort.html" class="read-more">
-        Lire →
-      </a>
+      <a href="reconfort.html" class="read-more">Lire →</a>
 
     </article>
 
@@ -255,17 +275,13 @@
         Vendredi 4 septembre 2026
       </div>
 
-      <h2>
-        Tes silences
-      </h2>
+      <h2>Tes silences</h2>
 
       <p class="excerpt">
         Ton langage.
       </p>
 
-      <a href="tes-silences.html" class="read-more">
-        Lire →
-      </a>
+      <a href="tes-silences.html" class="read-more">Lire →</a>
 
     </article>
 
@@ -278,18 +294,14 @@
         Jeudi 3 septembre 2026
       </div>
 
-      <h2>
-        Exaltation
-      </h2>
+      <h2>Exaltation</h2>
 
       <p class="excerpt">
         Un vertige, une émotion qui déborde,
         quelque chose qui ne demande qu'à être vécu.
       </p>
 
-      <a href="exaltation.html" class="read-more">
-        Lire →
-      </a>
+      <a href="exaltation.html" class="read-more">Lire →</a>
 
     </article>
 
@@ -302,21 +314,24 @@
         Mercredi 2 septembre 2026
       </div>
 
-      <h2>
-        Tu n'étais pas là
-      </h2>
+      <h2>Tu n'étais pas là</h2>
 
       <p class="excerpt">
         Certains silences prennent plus de place
         que les mots.
       </p>
 
-      <a href="Tu-n-etais-pas-la.html" class="read-more">
-        Lire →
-      </a>
+      <a href="Tu-n-etais-pas-la.html" class="read-more">Lire →</a>
 
     </article>
 
+
+    <!-- NUMÉROS DES PAGES -->
+
+    <div id="pagination"></div>
+
+
+    <!-- RETOUR AU SITE -->
 
     <div class="back">
 
@@ -326,7 +341,6 @@
 
     </div>
 
-
   </main>
 
 
@@ -334,100 +348,145 @@
 
     const articles = document.querySelectorAll('.lou-entry');
     const articlesParPage = 5;
-
-    let pageActuelle = 1;
-
     const nombreDePages = Math.ceil(articles.length / articlesParPage);
 
+    const parametres = new URLSearchParams(window.location.search);
+    const pageDemandee = parseInt(parametres.get('pageLou'), 10);
+
+    let pageActuelle = Number.isInteger(pageDemandee) &&
+      pageDemandee >= 1 &&
+      pageDemandee <= nombreDePages
+        ? pageDemandee
+        : 1;
+
+
+    /* MÉMORISER LA PAGE DANS LES LIENS DES ARTICLES */
+
+    function preparerLiensArticles() {
+
+      articles.forEach(article => {
+
+        const lien = article.querySelector('.read-more');
+
+        if (lien) {
+
+          const url = new URL(lien.href, window.location.href);
+
+          url.searchParams.set('pageLou', pageActuelle);
+
+          lien.href = url.href;
+
+        }
+
+      });
+
+    }
+
+
+    /* AFFICHER LES ARTICLES DE LA PAGE CHOISIE */
 
     function afficherPage(page) {
 
       pageActuelle = page;
 
+      const debut = (page - 1) * articlesParPage;
+      const fin = debut + articlesParPage;
+
       articles.forEach((article, index) => {
 
-        const debut = (page - 1) * articlesParPage;
-        const fin = debut + articlesParPage;
-
-        if (index >= debut && index < fin) {
-          article.style.display = 'block';
-        } else {
-          article.style.display = 'none';
-        }
+        article.style.display =
+          index >= debut && index < fin ? 'block' : 'none';
 
       });
 
+      if (page === 1) {
+        history.replaceState(null, '', window.location.pathname);
+      } else {
+        history.replaceState(
+          null,
+          '',
+          window.location.pathname + '?pageLou=' + page
+        );
+      }
+
+      preparerLiensArticles();
       afficherNavigation();
 
     }
 
 
+    /* CRÉER LES NUMÉROS ET LES FLÈCHES */
+
     function afficherNavigation() {
 
-      let navigation = document.getElementById('pagination');
-
-      if (!navigation) {
-
-        navigation = document.createElement('div');
-        navigation.id = 'pagination';
-
-        document.querySelector('main').appendChild(navigation);
-
-      }
+      const navigation = document.getElementById('pagination');
 
       navigation.innerHTML = '';
+
+      if (nombreDePages <= 1) {
+        return;
+      }
 
 
       if (pageActuelle > 1) {
 
         const precedent = document.createElement('a');
 
-        precedent.href = '#';
-        precedent.textContent = '← Articles précédents';
+        precedent.href = '?pageLou=' + (pageActuelle - 1);
+        precedent.textContent = '← Précédent';
+        precedent.className = 'navigation';
 
-        precedent.style.marginRight = '25px';
-
-        precedent.onclick = function(e) {
-
+        precedent.addEventListener('click', function(e) {
           e.preventDefault();
-
           afficherPage(pageActuelle - 1);
-
           window.scrollTo(0, 0);
-
-        };
+        });
 
         navigation.appendChild(precedent);
 
       }
 
 
-      const page = document.createElement('span');
+      for (let numero = 1; numero <= nombreDePages; numero++) {
 
-      page.textContent = 'Page ' + pageActuelle + ' sur ' + nombreDePages;
+        const lien = document.createElement('a');
 
-      navigation.appendChild(page);
+        lien.href = numero === 1 ? 'index.html' : '?pageLou=' + numero;
+        lien.textContent = numero;
+
+        if (numero === pageActuelle) {
+
+          lien.className = 'page-active';
+          lien.setAttribute('aria-current', 'page');
+
+        } else {
+
+          lien.addEventListener('click', function(e) {
+            e.preventDefault();
+            afficherPage(numero);
+            window.scrollTo(0, 0);
+          });
+
+        }
+
+        navigation.appendChild(lien);
+
+      }
 
 
       if (pageActuelle < nombreDePages) {
 
         const suivant = document.createElement('a');
 
-        suivant.href = '#';
+        suivant.href = '?pageLou=' + (pageActuelle + 1);
+        suivant.textContent = 'Suivant →';
+        suivant.className = 'navigation';
 
-        suivant.textContent = 'Articles suivants →';
-
-        suivant.style.marginLeft = '25px';
-
-        suivant.onclick = function(e) {
-
+        suivant.addEventListener('click', function(e) {
           e.preventDefault();
-
           afficherPage(pageActuelle + 1);
-
           window.scrollTo(0, 0);
-
-        };
+        });
 
         navigation.appendChild(suivant);
 
@@ -436,11 +495,12 @@
     }
 
 
-    afficherPage(1);
+    /* AFFICHER LA BONNE PAGE AU CHARGEMENT */
+
+    afficherPage(pageActuelle);
 
   </script>
 
-
 </body>
-
 </html>
+```
