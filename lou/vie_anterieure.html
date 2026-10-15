@@ -255,9 +255,21 @@ PAS LE DROIT. </blockquote> </p>
 
     <div class="back">
 
-      <a href="index.html">
-        ← Retour à Lou
-      </a>
+  <a href="index.html" id="retour-lou">
+    ← Retour à Lou
+  </a>
+
+</div>
+
+<script>
+const parametres = new URLSearchParams(window.location.search);
+const pageLou = parametres.get('pageLou');
+
+if (pageLou && /^\d+$/.test(pageLou)) {
+  document.getElementById('retour-lou').href =
+    'index.html?pageLou=' + pageLou;
+}
+</script>
 
     </div>
 
