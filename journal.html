@@ -1,830 +1,766 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journal — MoonBloomWitch</title>
 
-<title>Journal — MoonBloomWitch</title>
+  <meta name="description" content="Le journal de MoonBloomWitch : pensées, souvenirs, fragments de vie et mots déposés dans la toile.">
 
-<meta name="description" content="Le journal de MoonBloomWitch : pensées, souvenirs, fragments de vie et mots déposés dans la toile.">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-<style>
+    body {
+      margin: 0;
+      background: #f3eee3;
+      color: #3f4035;
+      font-family: Georgia, "Times New Roman", serif;
+    }
 
-* {
-  box-sizing: border-box;
-}
+    body::before {
+      content: "✦ ✧ ✦ ✧ ✦";
+      display: block;
+      text-align: center;
+      color: #879477;
+      font-size: 14px;
+      letter-spacing: 12px;
+      padding-top: 25px;
+    }
 
-body {
-  margin: 0;
-  background: #f3eee3;
-  color: #3f4035;
-  font-family: Georgia, "Times New Roman", serif;
-}
+    /* NAVIGATION */
 
-body::before {
-  content: "✦ ✧ ✦ ✧ ✦";
-  display: block;
-  text-align: center;
-  color: #879477;
-  font-size: 14px;
-  letter-spacing: 12px;
-  padding-top: 25px;
-}
+    nav {
+      text-align: center;
+      padding: 18px 10px;
+      border-bottom: 1px solid #ddd5c4;
+      background: rgba(255, 252, 243, 0.45);
+    }
 
-/* NAVIGATION */
+    nav a {
+      color: #68745e;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
 
-nav {
-  text-align: center;
-  padding: 18px 10px;
-  border-bottom: 1px solid #ddd5c4;
-  background: rgba(255, 252, 243, 0.45);
-}
+    nav a:hover {
+      color: #9a8065;
+    }
 
-nav a {
-  color: #68745e;
-  text-decoration: none;
-  margin: 0 15px;
-  font-size: 15px;
-  letter-spacing: 1px;
-}
+    /* EN-TÊTE */
 
-nav a:hover {
-  color: #9a8065;
-}
+    header {
+      text-align: center;
+      padding: 55px 20px 60px;
+    }
 
-/* EN-TÊTE */
+    .moon {
+      font-size: 95px;
+      color: #e8dfc9;
+      text-shadow:
+        0 0 20px rgba(255, 249, 220, 0.9),
+        0 0 45px rgba(160, 153, 119, 0.35);
+      line-height: 1;
+    }
 
-header {
-  text-align: center;
-  padding: 55px 20px 60px;
-}
+    .flowers {
+      color: #879477;
+      font-size: 28px;
+      letter-spacing: 8px;
+      margin: 20px 0;
+    }
 
-.moon {
-  font-size: 95px;
-  color: #e8dfc9;
-  text-shadow:
-    0 0 20px rgba(255, 249, 220, 0.9),
-    0 0 45px rgba(160, 153, 119, 0.35);
-  line-height: 1;
-}
+    h1 {
+      font-size: 48px;
+      font-weight: normal;
+      color: #5b6250;
+      letter-spacing: 3px;
+      margin: 0;
+    }
 
-.flowers {
-  color: #879477;
-  font-size: 28px;
-  letter-spacing: 8px;
-  margin: 20px 0;
-}
+    .subtitle {
+      margin-top: 18px;
+      color: #8b806d;
+      font-size: 18px;
+      font-style: italic;
+    }
 
-h1 {
-  font-size: 48px;
-  font-weight: normal;
-  color: #5b6250;
-  letter-spacing: 3px;
-  margin: 0;
-}
+    .divider {
+      width: 120px;
+      height: 1px;
+      background: #a9a48d;
+      margin: 35px auto;
+    }
 
-.subtitle {
-  margin-top: 18px;
-  color: #8b806d;
-  font-size: 18px;
-  font-style: italic;
-}
+    /* JOURNAL */
 
-.divider {
-  width: 120px;
-  height: 1px;
-  background: #a9a48d;
-  margin: 35px auto;
-}
+    main {
+      max-width: 760px;
+      margin: auto;
+      padding: 0 25px 80px;
+    }
 
-/* JOURNAL */
+    .intro {
+      text-align: center;
+      color: #8b806d;
+      font-style: italic;
+      font-size: 17px;
+      line-height: 1.9;
+      margin-bottom: 45px;
+    }
 
-main {
-  max-width: 760px;
-  margin: auto;
-  padding: 0 25px 80px;
-}
+    .journal-entry {
+      background: rgba(255, 252, 243, 0.65);
+      border: 1px solid #ddd5c4;
+      padding: 35px;
+      margin-bottom: 30px;
+      box-shadow: 0 8px 25px rgba(91, 98, 80, 0.07);
+      text-align: center;
+    }
 
-.intro {
-  text-align: center;
-  color: #8b806d;
-  font-style: italic;
-  font-size: 17px;
-  line-height: 1.9;
-  margin-bottom: 45px;
-}
+    .date {
+      color: #879477;
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
 
-.journal-entry {
-  background: rgba(255, 252, 243, 0.65);
-  border: 1px solid #ddd5c4;
-  padding: 35px;
-  margin-bottom: 30px;
-  box-shadow: 0 8px 25px rgba(91, 98, 80, 0.07);
-  text-align: center;
-}
+    h2 {
+      color: #5d6653;
+      font-size: 30px;
+      font-weight: normal;
+      margin: 12px 0 18px;
+    }
 
-.date {
-  color: #879477;
-  font-size: 13px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
+    .excerpt {
+      font-size: 17px;
+      line-height: 1.9;
+      margin-bottom: 25px;
+    }
 
-h2 {
-  color: #5d6653;
-  font-size: 30px;
-  font-weight: normal;
-  margin: 12px 0 18px;
-}
+    .read-more {
+      display: inline-block;
+      color: #68745e;
+      text-decoration: none;
+      font-style: italic;
+      border-bottom: 1px solid #a9a48d;
+      padding-bottom: 4px;
+      transition: color 0.3s ease;
+    }
 
-.excerpt {
-  font-size: 17px;
-  line-height: 1.9;
-  margin-bottom: 25px;
-}
+    .read-more:hover {
+      color: #9a8065;
+    }
 
-.read-more {
-  color: #68745e;
-  text-decoration: none;
-  font-style: italic;
-  border-bottom: 1px solid #a9a48d;
-  padding-bottom: 4px;
-  transition: color 0.3s ease;
-}
+    /* PAGINATION */
 
-.read-more:hover {
-  color: #9a8065;
-}
+    #pagination {
+      text-align: center;
+      margin-top: 45px;
+      line-height: 2.2;
+    }
 
-/* PIED DE PAGE */
+    #pagination a {
+      color: #68745e;
+      text-decoration: none;
+    }
 
-footer {
-  text-align: center;
-  padding: 60px 20px;
-  color: #879477;
-  font-size: 14px;
-}
+    #pagination a:hover {
+      color: #9a8065;
+    }
 
-/* TÉLÉPHONE */
+    #pagination .numero-page {
+      display: inline-block;
+      margin: 0 8px;
+    }
 
-@media (max-width: 600px) {
+    #pagination .page-active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
 
-  h1 {
-    font-size: 38px;
-  }
+    #pagination .indication {
+      color: #879477;
+      margin-top: 12px;
+    }
 
-  .moon {
-    font-size: 75px;
-  }
+    #pagination .precedent {
+      margin-right: 20px;
+    }
 
-  nav a {
-    margin: 0 7px;
-    font-size: 13px;
-  }
+    #pagination .suivant {
+      margin-left: 20px;
+    }
 
-  .journal-entry {
-    padding: 25px;
-  }
+    /* PIED DE PAGE */
 
-}
+    footer {
+      text-align: center;
+      padding: 60px 20px;
+      color: #879477;
+      font-size: 14px;
+    }
 
-</style>
+    /* TÉLÉPHONE */
 
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 38px;
+      }
+
+      .moon {
+        font-size: 75px;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 13px;
+      }
+
+      .journal-entry {
+        padding: 25px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<nav>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="journal.html">Journal</a>
+    <a href="photos.html">Photos</a>
+    <a href="a-propos.html">À propos</a>
+  </nav>
 
-  <a href="index.html">Accueil</a>
-  <a href="journal.html">Journal</a>
-  <a href="photos.html">Photos</a>
-  <a href="a-propos.html">À propos</a>
+  <header>
+    <div class="moon">☾</div>
 
-</nav>
-
-
-<header>
-
-  <div class="moon">☾</div>
-
-  <div class="flowers">
-    ❀ ✿ ❀
-  </div>
-
-  <h1>
-    Mon journal
-  </h1>
-
-  <div class="subtitle">
-    fragments de pensées, de souvenirs et de moi
-  </div>
-
-  <div class="divider"></div>
-
-</header>
-
-
-<main>
-
-  <div class="intro">
-    Quelques morceaux de moi déposés ici,
-    quelque part entre les mots et les silences.
-  </div>
-<!-- ARTICLE : JE ME DEMANDAIS --><article class="journal-entry">  <div class="date">
-   Dimanche 18 octobre 2026
-  </div>  <h2>
-    Une question
-  </h2>  <p>
-    Ne raccroche pas 
-  </p><a href="articles/Je_me_demandais.html" class="read-more">Lire →</a>
-
-</article>
-<!-- ARTICLE : TU ÉTAIS LÀ -->
-
-<article class="journal-entry">
-
-  <div class="date">
-    Vendredi 16 octobre 2026
-  </div>
-
-  <h2>
-    Tu étais là!
-  </h2>
-
-  <p>
-    Tu étais là!
-  </p>
-
-  <a href="articles/tu_etais_la.html" class="read-more">Lire →</a>
-
-</article>
-```
-  
-<!-- ARTICLE : DES PLUMES ET DES LARMES  -->
-  
-<article class="journal-entry">
-
-    <div class="date">
-    Mercredi 14 octobre 2026
-  </div>
-  <h2>Des plumes et des larmes</h2>
-  <p>On a une poule qui est morte aujourd'hui. C'est tellement dur, je crois que je ne m'y habituerai jamais.</p>
-  <a href="articles/des_plumes_et_des_larmes.html" class="read-more">Lire →</a>
-</article>
-
-
-  <!-- ARTICLE : J'AI LE VERTIGE -->
-
-<article class="journal-entry">
-
-  <div class="date">
-    Samedi 10 octobre 2026
-  </div>
-
-  <h2>
-    J'ai le vertige
-  </h2>
-
-  <p class="excerpt">
-    Une box de 50 cm, la peur de sauter et ce vertige qui ressemble parfois à celui de l'absence.
-  </p>
-
-  <a href="articles/j_ai_le_vertige.html" class="read-more">
-    Lire →
-  </a>
-
-</article>
-
-  <!-- ARTICLE : DANS LE SILENCE -->
-
-<article class="journal-entry">
-
-  <div class="date">
-    Dimanche 4 octobre 2026
-  </div>
-
-  <h2>
-    Dans le silence
-  </h2>
-
-  <p class="excerpt">
-    Quand une séparation fait trop mal, on laisse le cœur se taire… mais l'espoir, lui, demeure.
-  </p>
-
-  <a href="articles/dans-le-silence.html" class="read-more">
-    Lire →
-  </a>
-
-</article>
-<!-- ARTICLE : C'EST LA FOLIE -->
-
-<article class="journal-entry">
-
-  <div class="date">
-    Dimanche 4 octobre 2026
-  </div>
-
-  <h2>
-    C'est la folie
-  </h2>
-
-  <p class="excerpt">
-    Une colère face aux images de violence et à ce que nous acceptons de voir.
-  </p>
-
-  <a href="articles/c-est-la-folie.html" class="read-more">
-    Lire →
-  </a>
-
-</article>
-<!-- ARTICLE : PHILOSOPHIE DE ROUSSEAU DIDEROT — COVER -->
-
-<article class="journal-entry">
-
-  <div class="date">
-    Mardi 29 septembre 2026
-  </div>
-
-  <h2>
-    Philosophie de Rousseau [Diderot — Cover] {5 octobre 2009}
-  </h2>
-
-  <p class="excerpt">
-    ........Test........
-  </p>
-
-  <a href="articles/philosophie_de_Rousseau_Diderot_cover.html" class="read-more">
-    Lire →
-  </a>
-
-</article>
-  
-
-
-  <!-- ARTICLE : VIE ANTÉRIEURE 2 -->
-
-  <article class="journal-entry">
-
-    <div class="date">
-      Lundi 28 septembre 2026
+    <div class="flowers">
+      ❀ ✿ ❀
     </div>
 
-    <h2>
-      Vie antérieure 2
-    </h2>
+    <h1>Mon journal</h1>
 
-    <p class="excerpt">
-      Une petite enquête existentielle entre noisettes et pignons de pin...
-    </p>
-
-    <a href="articles/vie_anterieure_2.html" class="read-more">
-      Lire →
-    </a>
-
-  </article>
-
-
-  <!-- ARTICLE : À MON SEUL DÉSIR -->
-
-  <article class="journal-entry">
-
-    <div class="date">
-      Lundi 28 septembre 2026
+    <div class="subtitle">
+      fragments de pensées, de souvenirs et de moi
     </div>
 
-    <h2>
-      A mon seul désir...
-    </h2>
+    <div class="divider"></div>
+  </header>
 
-    <p class="excerpt">
-      Lequel des 5 sens nous rassemblera? L'ouïe? La vue? Le toucher? Le goût? Ou l'odorat?
-    </p>
+  <main>
 
-    <a href="articles/a_mon_seul_desir.html" class="read-more">
-      Lire →
-    </a>
-
-  </article>
-
-
-  <!-- ARTICLE : LES LARMES DU CROCODILE -->
-
-  <article class="journal-entry">
-
-    <div class="date">
-      Dimanche 27 septembre 2026
+    <div class="intro">
+      Quelques morceaux de moi déposés ici,
+      quelque part entre les mots et les silences.
     </div>
 
-    <h2>
-      Les larmes du crocodile
-    </h2>
+    <!-- ARTICLE : JE ME DEMANDAIS -->
 
-    <p class="excerpt">
-      Tout à cacher...
-    </p>
+    <article class="journal-entry">
+      <div class="date">
+        Dimanche 18 octobre 2026
+      </div>
 
-    <a href="articles/les_larmes_du_crocodile.html" class="read-more">
-      Lire →
-    </a>
+      <h2>Une question</h2>
 
-  </article>
+      <p class="excerpt">
+        Ne raccroche pas
+      </p>
 
+      <a href="articles/Je_me_demandais.html" class="read-more">Lire →</a>
+    </article>
 
-  <!-- ARTICLE : DISCRÉTION -->
+    <!-- ARTICLE : TU ÉTAIS LÀ -->
 
-  <article class="journal-entry">
+    <article class="journal-entry">
+      <div class="date">
+        Vendredi 16 octobre 2026
+      </div>
 
-    <div class="date">
-      Dimanche 27 septembre 2026
-    </div>
+      <h2>Tu étais là!</h2>
 
-    <h2>
-      Discrétion
-    </h2>
+      <p class="excerpt">
+        Tu étais là!
+      </p>
 
-    <p class="excerpt">
-      Une voix qui cherche à exister dans un monde trop bruyant, trop vif, trop dur.
-    </p>
+      <a href="articles/tu_etais_la.html" class="read-more">Lire →</a>
+    </article>
 
-    <a href="articles/discretion.html" class="read-more">
-      Lire →
-    </a>
+    <!-- ARTICLE : DES PLUMES ET DES LARMES -->
 
-  </article>
+    <article class="journal-entry">
+      <div class="date">
+        Mercredi 14 octobre 2026
+      </div>
 
+      <h2>Des plumes et des larmes</h2>
 
-  <!-- ARTICLE : DECRESCENDO -->
+      <p class="excerpt">
+        On a une poule qui est morte aujourd'hui. C'est tellement dur, je crois que je ne m'y habituerai jamais.
+      </p>
 
-  <article class="journal-entry">
+      <a href="articles/des_plumes_et_des_larmes.html" class="read-more">Lire →</a>
+    </article>
 
-    <div class="date">
-      Mercredi 23 septembre 2026
-    </div>
+    <!-- ARTICLE : J'AI LE VERTIGE -->
 
-    <h2>
-      Decrescendo
-    </h2>
+    <article class="journal-entry">
+      <div class="date">
+        Samedi 10 octobre 2026
+      </div>
 
-    <p class="excerpt">
-      Des pensées murmurées à la brise
-    </p>
+      <h2>J'ai le vertige</h2>
 
-    <a href="articles/decrescendo.html" class="read-more">
-      Lire →
-    </a>
+      <p class="excerpt">
+        Une box de 50 cm, la peur de sauter et ce vertige qui ressemble parfois à celui de l'absence.
+      </p>
 
-  </article>
+      <a href="articles/j_ai_le_vertige.html" class="read-more">Lire →</a>
+    </article>
 
+    <!-- ARTICLE : DANS LE SILENCE -->
 
-  <!-- ARTICLE : POUR LE MEILLEUR -->
+    <article class="journal-entry">
+      <div class="date">
+        Dimanche 4 octobre 2026
+      </div>
 
-  <article class="journal-entry">
+      <h2>Dans le silence</h2>
 
-    <div class="date">
-      Jeudi 17 septembre 2026
-    </div>
+      <p class="excerpt">
+        Quand une séparation fait trop mal, on laisse le cœur se taire… mais l'espoir, lui, demeure.
+      </p>
 
-    <h2>
-      Pour le meilleur
-    </h2>
+      <a href="articles/dans-le-silence.html" class="read-more">Lire →</a>
+    </article>
 
-    <p class="excerpt">
-      Chaque seconde à tes côtés rend la vie plus douce
-    </p>
+    <!-- ARTICLE : C'EST LA FOLIE -->
 
-    <a href="articles/pour_le_meilleur.html" class="read-more">
-      Lire →
-    </a>
+    <article class="journal-entry">
+      <div class="date">
+        Dimanche 4 octobre 2026
+      </div>
 
-  </article>
+      <h2>C'est la folie</h2>
 
+      <p class="excerpt">
+        Une colère face aux images de violence et à ce que nous acceptons de voir.
+      </p>
 
-  <!-- ARTICLE : APOSTILLE -->
+      <a href="articles/c-est-la-folie.html" class="read-more">Lire →</a>
+    </article>
 
-  <article class="journal-entry">
+    <!-- ARTICLE : PHILOSOPHIE DE ROUSSEAU -->
 
-    <div class="date">
-      Vendredi 11 septembre 2026
-    </div>
+    <article class="journal-entry">
+      <div class="date">
+        Mardi 29 septembre 2026
+      </div>
 
-    <h2>
-      Apostille
-    </h2>
+      <h2>Philosophie de Rousseau [Diderot — Cover] {5 octobre 2009}</h2>
 
-    <p class="excerpt">
-      Douces réflexions d'un vendredi de septembre
-    </p>
+      <p class="excerpt">
+        ........Test........
+      </p>
 
-    <a href="articles/Apostille.html" class="read-more">
-      Lire →
-    </a>
+      <a href="articles/philosophie_de_Rousseau_Diderot_cover.html" class="read-more">Lire →</a>
+    </article>
 
-  </article>
+    <!-- ARTICLE : VIE ANTÉRIEURE 2 -->
 
+    <article class="journal-entry">
+      <div class="date">
+        Lundi 28 septembre 2026
+      </div>
 
-  <!-- ARTICLE : N'AI-JE ? -->
+      <h2>Vie antérieure 2</h2>
 
-  <article class="journal-entry">
+      <p class="excerpt">
+        Une petite enquête existentielle entre noisettes et pignons de pin...
+      </p>
 
-    <div class="date">
-      Samedi 05 septembre 2026
-    </div>
+      <a href="articles/vie_anterieure_2.html" class="read-more">Lire →</a>
+    </article>
 
-    <h2>
-      N'ai-je ?
-    </h2>
+    <!-- ARTICLE : À MON SEUL DÉSIR -->
 
-    <p class="excerpt">
-      N'ai-je plus aucune flèche à envoyer ?
-      Un message au vent, comme si quelqu'un
-      pouvait entendre...
-    </p>
+    <article class="journal-entry">
+      <div class="date">
+        Lundi 28 septembre 2026
+      </div>
 
-    <a href="articles/n-ai-je.html" class="read-more">
-      Lire →
-    </a>
+      <h2>À mon seul désir...</h2>
 
-  </article>
+      <p class="excerpt">
+        Lequel des 5 sens nous rassemblera? L'ouïe? La vue? Le toucher? Le goût? Ou l'odorat?
+      </p>
 
+      <a href="articles/a_mon_seul_desir.html" class="read-more">Lire →</a>
+    </article>
 
-  <!-- ARTICLE : UNE SAISON ÉTRANGE -->
+    <!-- ARTICLE : LES LARMES DU CROCODILE -->
 
-  <article class="journal-entry">
+    <article class="journal-entry">
+      <div class="date">
+        Dimanche 27 septembre 2026
+      </div>
 
-    <div class="date">
-      Jeudi 03 septembre 2026
-    </div>
+      <h2>Les larmes du crocodile</h2>
 
-    <h2>
-      Une saison étrange
-    </h2>
+      <p class="excerpt">
+        Tout à cacher...
+      </p>
 
-    <p class="excerpt">
-      C'est une saison étrange que nous vivons.
-      Est-ce une fin ? Un début ?
-      Quoi qu'il en soit, mes épinards poussent enfin,
-      et mes grandes mauves aussi.
-    </p>
+      <a href="articles/les_larmes_du_crocodile.html" class="read-more">Lire →</a>
+    </article>
 
-    <a href="articles/une-saison-etrange.html" class="read-more">
-      Lire →
-    </a>
+    <!-- ARTICLE : DISCRÉTION -->
 
-  </article>
+    <article class="journal-entry">
+      <div class="date">
+        Dimanche 27 septembre 2026
+      </div>
 
+      <h2>Discrétion</h2>
 
-  <!-- ARTICLE : MUTAGÈNES -->
+      <p class="excerpt">
+        Une voix qui cherche à exister dans un monde trop bruyant, trop vif, trop dur.
+      </p>
 
-  <article class="journal-entry">
+      <a href="articles/discretion.html" class="read-more">Lire →</a>
+    </article>
 
-    <div class="date">
-      Mercredi 02 septembre 2026
-    </div>
+    <!-- ARTICLE : DECRESCENDO -->
 
-    <h2>
-      Mutagènes
-    </h2>
+    <article class="journal-entry">
+      <div class="date">
+        Mercredi 23 septembre 2026
+      </div>
 
-    <p class="excerpt">
-      Les sentiments enveloppent mes couches d'âme
-      comme les sédiments recouvrent les strates terrestres.
-      Tout est mutable. Rien ne se perd, tout se transforme.
-    </p>
+      <h2>Decrescendo</h2>
 
-    <a href="articles/mutagenes.html" class="read-more">
-      Lire →
-    </a>
+      <p class="excerpt">
+        Des pensées murmurées à la brise
+      </p>
 
-  </article>
-  <!-- ARTICLE : LES GENS HEUREUX N'ONT PAS D'HISTOIRE -->
+      <a href="articles/decrescendo.html" class="read-more">Lire →</a>
+    </article>
 
-<article class="journal-entry">
+    <!-- ARTICLE : POUR LE MEILLEUR -->
 
-  <div class="date">
-    Juin 2026
-  </div>
+    <article class="journal-entry">
+      <div class="date">
+        Jeudi 17 septembre 2026
+      </div>
 
-  <h2>
-    Les gens heureux n'ont pas d'histoire (article d'octobre 2009)
-  </h2>
+      <h2>Pour le meilleur</h2>
 
-  <p class="excerpt">
-   Flash Back encore : Quand les mots ne suffisent plus à raconter tout ce qui se passe à l'intérieur.
-  </p>
+      <p class="excerpt">
+        Chaque seconde à tes côtés rend la vie plus douce
+      </p>
 
-  <a href="articles/Les_gens_heureux_n_ont_pas_d_histoire.html" class="read-more">
-    Lire →
-  </a>
+      <a href="articles/pour_le_meilleur.html" class="read-more">Lire →</a>
+    </article>
 
-</article>
-<!-- ARTICLE : APRÈS LE DIVORCE -->
+    <!-- ARTICLE : APOSTILLE -->
 
-<article class="journal-entry">
+    <article class="journal-entry">
+      <div class="date">
+        Vendredi 11 septembre 2026
+      </div>
 
-  <div class="date">
-    Juin 2026
-  </div>
+      <h2>Apostille</h2>
 
-  <h2>
-    Après le divorce (article d'octobre 2009)
-  </h2>
+      <p class="excerpt">
+        Douces réflexions d'un vendredi de septembre
+      </p>
 
-  <p class="excerpt">
-    On continue les Flashbacks? Quand tout s'effondre autour de soi, apprendre à se créer sa propre liberté.
-  </p>
+      <a href="articles/Apostille.html" class="read-more">Lire →</a>
+    </article>
 
-  <a href="articles/apres_le_divorce.html" class="read-more">
-    Lire →
-  </a>
-  </article>
-<!-- ARTICLE : 20 ANS PLUS TARD -->
+    <!-- ARTICLE : N'AI-JE ? -->
 
-<article class="journal-entry">
+    <article class="journal-entry">
+      <div class="date">
+        Samedi 05 septembre 2026
+      </div>
 
-  <div class="date">
-    Juin 2026
-  </div>
+      <h2>N'ai-je ?</h2>
 
-  <h2>
-    20 ans plus tard (article de mars 2006)
-  </h2>
+      <p class="excerpt">
+        N'ai-je plus aucune flèche à envoyer ?
+        Un message au vent, comme si quelqu'un
+        pouvait entendre...
+      </p>
 
-  <p class="excerpt">
-    J'ai écris cet article il y a 20 ans... Et il résonne aujourd'hui encore. Tout est cyclique dans la vie.
-  </p>
+      <a href="articles/n-ai-je.html" class="read-more">Lire →</a>
+    </article>
 
-  <a href="articles/20_ans_plus_tard.html" class="read-more">
-    Lire →
-  </a>
+    <!-- ARTICLE : UNE SAISON ÉTRANGE -->
 
-</article>
-  <!-- ARTICLE : C'EST QUOI LA VIE ? -->
+    <article class="journal-entry">
+      <div class="date">
+        Jeudi 03 septembre 2026
+      </div>
 
-<article class="journal-entry">
+      <h2>Une saison étrange</h2>
 
-  <div class="date">
-    Juin 2026
-  </div>
+      <p class="excerpt">
+        C'est une saison étrange que nous vivons.
+        Est-ce une fin ? Un début ?
+        Quoi qu'il en soit, mes épinards poussent enfin,
+        et mes grandes mauves aussi.
+      </p>
 
-  <h2>
-    C'est quoi la vie ? (article de février 2006)
-  </h2>
+      <a href="articles/une-saison-etrange.html" class="read-more">Lire →</a>
+    </article>
 
-  <p class="excerpt">
-    Une promenade adolescente, glacée entre solitude, couleurs et barreaux invisibles.
-  </p>
+    <!-- ARTICLE : MUTAGÈNES -->
 
-  <a href="articles/c_est_quoi_la_vie.html" class="read-more">
-    Lire →
-  </a>
-</article>
+    <article class="journal-entry">
+      <div class="date">
+        Mercredi 02 septembre 2026
+      </div>
 
-</main>
+      <h2>Mutagènes</h2>
 
+      <p class="excerpt">
+        Les sentiments enveloppent mes couches d'âme
+        comme les sédiments recouvrent les strates terrestres.
+        Tout est mutable. Rien ne se perd, tout se transforme.
+      </p>
 
-<footer>
-  ☾ ✦ MoonBloomWitch ✦ ☽
-</footer>
+      <a href="articles/mutagenes.html" class="read-more">Lire →</a>
+    </article>
 
-<script>
-const articles = document.querySelectorAll('.journal-entry');
-const articlesParPage = 8;
+    <!-- ARTICLE : LES GENS HEUREUX N'ONT PAS D'HISTOIRE -->
 
-let pageActuelle = 1;
+    <article class="journal-entry">
+      <div class="date">
+        Juin 2026
+      </div>
 
-const nombreDePages = Math.ceil(articles.length / articlesParPage);
+      <h2>Les gens heureux n'ont pas d'histoire (article d'octobre 2009)</h2>
 
-// Ajouter le numéro de page aux liens des articles
-function preparerLiensArticles() {
-  articles.forEach(article => {
-    const liens = article.querySelectorAll('a.read-more');
+      <p class="excerpt">
+        Flash Back encore : Quand les mots ne suffisent plus à raconter tout ce qui se passe à l'intérieur.
+      </p>
 
-    liens.forEach(lien => {
-      const url = new URL(lien.href, window.location.href);
-      url.searchParams.set('pageJournal', pageActuelle);
-      lien.href = url.href;
-    });
-  });
-}
+      <a href="articles/Les_gens_heureux_n_ont_pas_d_histoire.html" class="read-more">Lire →</a>
+    </article>
 
-// Afficher les articles de la page choisie
-function afficherPage(page) {
-  pageActuelle = Math.min(
-    Math.max(page, 1),
-    nombreDePages
-  );
+    <!-- ARTICLE : APRÈS LE DIVORCE -->
 
-  const debut = (pageActuelle - 1) * articlesParPage;
-  const fin = debut + articlesParPage;
+    <article class="journal-entry">
+      <div class="date">
+        Juin 2026
+      </div>
 
-  articles.forEach((article, index) => {
-    article.style.display =
-      index >= debut && index < fin ? 'block' : 'none';
-  });
+      <h2>Après le divorce (article d'octobre 2009)</h2>
 
-  preparerLiensArticles();
-  afficherNavigation();
-}
+      <p class="excerpt">
+        On continue les Flashbacks? Quand tout s'effondre autour de soi, apprendre à se créer sa propre liberté.
+      </p>
 
-// Créer la navigation du journal
-function afficherNavigation() {
-  let navigation = document.getElementById('pagination');
+      <a href="articles/apres_le_divorce.html" class="read-more">Lire →</a>
+    </article>
 
-  if (!navigation) {
-    navigation = document.createElement('div');
-    navigation.id = 'pagination';
-    navigation.style.textAlign = 'center';
-    navigation.style.marginTop = '45px';
-    document.querySelector('main').appendChild(navigation);
-  }
+    <!-- ARTICLE : 20 ANS PLUS TARD -->
 
-  navigation.innerHTML = '';
+    <article class="journal-entry">
+      <div class="date">
+        Juin 2026
+      </div>
 
-  // Bouton Articles précédents
-  if (pageActuelle > 1) {
-    const precedent = document.createElement('a');
+      <h2>20 ans plus tard (article de mars 2006)</h2>
 
-    precedent.href = '#';
-    precedent.textContent = '← Articles précédents';
-    precedent.style.color = '#68745e';
-    precedent.style.marginRight = '20px';
+      <p class="excerpt">
+        J'ai écris cet article il y a 20 ans... Et il résonne aujourd'hui encore. Tout est cyclique dans la vie.
+      </p>
 
-    precedent.onclick = function(e) {
-      e.preventDefault();
-      afficherPage(pageActuelle - 1);
-      window.scrollTo(0, 0);
-    };
+      <a href="articles/20_ans_plus_tard.html" class="read-more">Lire →</a>
+    </article>
 
-    navigation.appendChild(precedent);
-  }
+    <!-- ARTICLE : C'EST QUOI LA VIE ? -->
 
-  // Numéros de pages cliquables
-  for (let numero = 1; numero <= nombreDePages; numero++) {
-    const lien = document.createElement('a');
+    <article class="journal-entry">
+      <div class="date">
+        Juin 2026
+      </div>
 
-    lien.href = '#';
-    lien.textContent = numero;
-    lien.style.color = '#68745e';
-    lien.style.margin = '0 8px';
-    lien.style.textDecoration = 'none';
+      <h2>C'est quoi la vie ? (article de février 2006)</h2>
 
-    // Mettre en évidence la page actuelle
-    if (numero === pageActuelle) {
-      lien.style.fontWeight = 'bold';
-      lien.style.textDecoration = 'underline';
+      <p class="excerpt">
+        Une promenade adolescente, glacée entre solitude, couleurs et barreaux invisibles.
+      </p>
+
+      <a href="articles/c_est_quoi_la_vie.html" class="read-more">Lire →</a>
+    </article>
+
+    <div id="pagination"></div>
+
+  </main>
+
+  <footer>
+    ☾ ✦ MoonBloomWitch ✦ ☽
+  </footer>
+
+  <script>
+    const articles = Array.from(
+      document.querySelectorAll('.journal-entry')
+    );
+
+    const articlesParPage = 8;
+    const nombreDePages = Math.ceil(articles.length / articlesParPage);
+
+    let pageActuelle = 1;
+
+    // Conserver le chemin original de chaque article.
+    // Ajouter le numéro de page sans modifier le nom du fichier.
+    function preparerLiensArticles() {
+      articles.forEach(article => {
+        const liens = article.querySelectorAll('a.read-more');
+
+        liens.forEach(lien => {
+          if (!lien.dataset.cheminOriginal) {
+            lien.dataset.cheminOriginal =
+              lien.getAttribute('href').split('?')[0];
+          }
+
+          lien.href =
+            lien.dataset.cheminOriginal +
+            '?pageJournal=' + pageActuelle;
+        });
+      });
     }
 
-    lien.onclick = function(e) {
-      e.preventDefault();
-      afficherPage(numero);
-      window.scrollTo(0, 0);
-    };
+    // Afficher les articles correspondant à la page choisie.
+    function afficherPage(page, mettreAJourUrl = true) {
+      pageActuelle = Math.min(
+        Math.max(page, 1),
+        nombreDePages
+      );
 
-    navigation.appendChild(lien);
-  }
+      const debut = (pageActuelle - 1) * articlesParPage;
+      const fin = debut + articlesParPage;
 
-  // Indication de la page actuelle
-  const indication = document.createElement('div');
+      articles.forEach((article, index) => {
+        article.style.display =
+          index >= debut && index < fin ? 'block' : 'none';
+      });
 
-  indication.textContent =
-    'Page ' + pageActuelle + ' sur ' + nombreDePages;
+      preparerLiensArticles();
+      afficherNavigation();
 
-  indication.style.color = '#879477';
-  indication.style.marginTop = '12px';
+      // Garder le numéro de page dans l'adresse du journal.
+      if (mettreAJourUrl) {
+        const nouvelleUrl = new URL(window.location.href);
 
-  navigation.appendChild(indication);
+        if (pageActuelle === 1) {
+          nouvelleUrl.searchParams.delete('pageJournal');
+        } else {
+          nouvelleUrl.searchParams.set(
+            'pageJournal',
+            pageActuelle
+          );
+        }
 
-  // Bouton Articles suivants
-  if (pageActuelle < nombreDePages) {
-    const suivant = document.createElement('a');
+        window.history.replaceState({}, '', nouvelleUrl);
+      }
+    }
 
-    suivant.href = '#';
-    suivant.textContent = 'Articles suivants →';
-    suivant.style.color = '#68745e';
-    suivant.style.marginLeft = '20px';
+    // Créer les boutons de navigation et les numéros de page.
+    function afficherNavigation() {
+      const navigation = document.getElementById('pagination');
 
-    suivant.onclick = function(e) {
-      e.preventDefault();
-      afficherPage(pageActuelle + 1);
-      window.scrollTo(0, 0);
-    };
+      navigation.innerHTML = '';
 
-    navigation.appendChild(suivant);
-  }
-}
+      if (nombreDePages <= 1) {
+        return;
+      }
 
-// Restaurer la page demandée au retour d'un article
-const parametres = new URLSearchParams(window.location.search);
-const pageDemandee = parseInt(parametres.get('pageJournal'), 10);
+      if (pageActuelle > 1) {
+        const precedent = document.createElement('a');
 
-afficherPage(
-  Number.isInteger(pageDemandee) ? pageDemandee : 1
-);
-</script>
+        precedent.href = '#';
+        precedent.textContent = '← Articles précédents';
+        precedent.className = 'precedent';
+
+        precedent.addEventListener('click', function(e) {
+          e.preventDefault();
+          afficherPage(pageActuelle - 1);
+          window.scrollTo(0, 0);
+        });
+
+        navigation.appendChild(precedent);
+      }
+
+      for (let numero = 1; numero <= nombreDePages; numero++) {
+        const lien = document.createElement('a');
+
+        lien.href = '#';
+        lien.textContent = numero;
+        lien.className = 'numero-page';
+
+        if (numero === pageActuelle) {
+          lien.classList.add('page-active');
+          lien.setAttribute('aria-current', 'page');
+        }
+
+        lien.addEventListener('click', function(e) {
+          e.preventDefault();
+          afficherPage(numero);
+          window.scrollTo(0, 0);
+        });
+
+        navigation.appendChild(lien);
+      }
+
+      const indication = document.createElement('div');
+
+      indication.textContent =
+        'Page ' + pageActuelle + ' sur ' + nombreDePages;
+
+      indication.className = 'indication';
+      navigation.appendChild(indication);
+
+      if (pageActuelle < nombreDePages) {
+        const suivant = document.createElement('a');
+
+        suivant.href = '#';
+        suivant.textContent = 'Articles suivants →';
+        suivant.className = 'suivant';
+
+        suivant.addEventListener('click', function(e) {
+          e.preventDefault();
+          afficherPage(pageActuelle + 1);
+          window.scrollTo(0, 0);
+        });
+
+        navigation.appendChild(suivant);
+      }
+    }
+
+    // Restaurer la page au retour d'un article.
+    const parametres = new URLSearchParams(window.location.search);
+    const pageDemandee = parseInt(
+      parametres.get('pageJournal'),
+      10
+    );
+
+    afficherPage(
+      Number.isInteger(pageDemandee) ? pageDemandee : 1,
+      false
+    );
+  </script>
 
 </body>
-
 </html>
