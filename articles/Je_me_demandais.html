@@ -3,150 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Une question — MoonBloomWitch</title>
-  <meta name="description" content="Dis, c'était quoi ta blessure à la tête vendredi ?">
+  <title>Une question</title>
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       margin: 0;
+      padding: 0;
       background: #f3eee3;
       color: #3f4035;
       font-family: Georgia, "Times New Roman", serif;
     }
 
-    nav {
-      text-align: center;
-      padding: 18px 10px;
-      border-bottom: 1px solid #ddd5c4;
-      background: rgba(255, 252, 243, 0.45);
-    }
-
-    nav a {
-      color: #68745e;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 15px;
-      letter-spacing: 1px;
-    }
-
-    nav a:hover {
-      color: #9a8065;
-    }
-
-    header {
-      text-align: center;
-      padding: 45px 20px 30px;
-    }
-
-    .flowers {
-      color: #879477;
-      font-size: 28px;
-      letter-spacing: 8px;
-      margin-bottom: 20px;
-    }
-
-    .date {
-      color: #879477;
-      font-size: 13px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-    }
-
-    main {
-      max-width: 760px;
-      margin: auto;
-      padding: 0 25px 60px;
-    }
-
     .article {
-      background: rgba(255, 252, 243, 0.65);
-      border: 1px solid #ddd5c4;
-      padding: 45px 35px;
-      margin-bottom: 35px;
-      box-shadow: 0 8px 25px rgba(91, 98, 80, 0.07);
-      text-align: center;
-    }
-
-    .article p {
+      max-width: 700px;
+      margin: 100px auto;
+      padding: 30px;
       font-size: 20px;
-      line-height: 2;
-      margin: 25px 0;
-    }
-
-    .back {
+      line-height: 1.8;
       text-align: center;
-      margin: 50px 0;
     }
 
-    .back a {
+    .retour {
+      display: inline-block;
+      margin-top: 50px;
       color: #879477;
       text-decoration: none;
-      font-size: 14px;
-      letter-spacing: 1px;
+      font-size: 16px;
     }
 
-    .back a:hover {
-      color: #9a8065;
-    }
-
-    @media (max-width: 600px) {
-      .article {
-        padding: 35px 20px;
-      }
-
-      .article p {
-        font-size: 18px;
-      }
+    .retour:hover {
+      color: #5b6250;
     }
   </style>
 </head>
 
 <body>
 
-  <nav>
+  <main class="article">
 
-    <a href="../index.html">Accueil</a>
-    <a href="../journal.html">Journal</a>
-    <a href="../photos.html">Photos</a>
-    <a href="../a-propos.html">À propos</a>
+    <p>Dis, c'était quoi ta blessure à la tête vendredi ?</p>
 
-  </nav>
-
-  <header>
-    <div class="flowers">❀ ❁ ❀</div>
-    <div class="date">Octobre 2026</div>
-  </header>
-
-  <main>
-
-    <article class="article">
-      <p>
-        Dis, c'était quoi ta blessure à la tête vendredi ?
-      </p>
-    </article>
-
-    <div class="back">
-    <a href="articles/coeur.html" class="read-more">Lire →</a>
-  ← Retour au journal
-    </a>
-    </div>
+    <a class="retour" href="coeur.html">← Retour au journal</a>
 
   </main>
 
-  <script>
-    const parametres = new URLSearchParams(window.location.search);
-    const pageJournal = parametres.get('pageJournal');
-
-    if (pageJournal && /^\d+$/.test(pageJournal)) {
-      document.getElementById('retour-journal').href =
-        'journal.html?pageJournal=' + pageJournal;
-    }
-  </script>
-
 </body>
-  </html>
+</html>
