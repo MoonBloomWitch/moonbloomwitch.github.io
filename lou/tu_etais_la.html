@@ -1,13 +1,15 @@
 
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow, noarchive">
 
-  <title>Tu étais là! — MoonBloomWitch</title>
+  <title>Tu étais là ! — Lou — MoonBloomWitch</title>
 
-  <meta name="description" content="Tu étais là!">
+  <meta name="description" content="Tu étais là ! — des retrouvailles, des souvenirs et un lien qui traverse le temps.">
 
   <style>
     * {
@@ -16,48 +18,67 @@
 
     body {
       margin: 0;
-      background: #f3eee3;
-      color: #3f4035;
+      background: #151812;
+      color: #aaa89f;
       font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.9;
     }
 
-    nav {
+    body::before {
+      content: "✦  ✧  ✦  ✧  ✦";
+      display: block;
       text-align: center;
-      padding: 18px 10px;
-      border-bottom: 1px solid #ddd5c4;
-      background: rgba(255, 252, 243, 0.45);
+      color: #41463d;
+      font-size: 14px;
+      letter-spacing: 10px;
+      padding-top: 25px;
     }
 
-    nav a {
-      color: #68745e;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 15px;
-      letter-spacing: 1px;
-    }
-
-    nav a:hover {
-      color: #9a8065;
-    }
+    /* EN-TÊTE */
 
     header {
       text-align: center;
-      padding: 45px 20px 30px;
+      padding: 45px 20px 35px;
     }
 
-    .flowers {
-      color: #879477;
-      font-size: 28px;
-      letter-spacing: 8px;
+    .moon {
+      font-size: 65px;
+      color: #777d70;
+      line-height: 1;
       margin-bottom: 20px;
     }
 
+    .flowers {
+      color: #55594e;
+      font-size: 22px;
+      letter-spacing: 8px;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: 34px;
+      font-weight: normal;
+      color: #b0ada3;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+
     .date {
-      color: #879477;
-      font-size: 13px;
+      margin-top: 18px;
+      color: #777d70;
+      font-size: 12px;
       letter-spacing: 3px;
       text-transform: uppercase;
     }
+
+    .divider {
+      width: 90px;
+      height: 1px;
+      background: #41463d;
+      margin: 30px auto;
+    }
+
+    /* ARTICLE */
 
     main {
       max-width: 760px;
@@ -66,48 +87,85 @@
     }
 
     .article {
-      background: rgba(255, 252, 243, 0.65);
-      border: 1px solid #ddd5c4;
-      padding: 45px 35px;
-      margin-bottom: 35px;
-      box-shadow: 0 8px 25px rgba(91, 98, 80, 0.07);
+      border-top: 1px solid #353a32;
+      border-bottom: 1px solid #353a32;
+      padding: 35px 25px;
       text-align: center;
     }
 
     .article p {
-      font-size: 20px;
+      font-size: 18px;
       line-height: 2;
-      margin: 25px 0;
+      color: #96958d;
+      margin: 0 0 28px;
     }
 
-    .article strong {
-      color: #5d6653;
-      font-size: 25px;
-    }
-
-    .back {
-      text-align: center;
-      margin: 50px 0;
-    }
-
-    .back a {
-      color: #879477;
-      text-decoration: none;
-      font-size: 14px;
+    .article p:first-child {
+      color: #b0ada3;
+      font-size: 23px;
       letter-spacing: 1px;
     }
 
-    .back a:hover {
-      color: #9a8065;
+    .article p:last-child {
+      margin-bottom: 0;
     }
 
+    .article strong {
+      color: #777d70;
+      font-size: 25px;
+      font-weight: normal;
+    }
+
+    /* RETOUR À L'INDEX DE LOU */
+
+    .back {
+      text-align: center;
+      margin: 45px 0 20px;
+    }
+
+    .back a {
+      color: #777d70;
+      text-decoration: none;
+      font-size: 14px;
+      letter-spacing: 1px;
+      transition: color 0.3s ease;
+    }
+
+    .back a:hover {
+      color: #c2bfb3;
+    }
+
+    /* PIED DE PAGE */
+
+    footer {
+      text-align: center;
+      padding: 35px 20px 25px;
+      color: #55594e;
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+
+    /* TÉLÉPHONE */
+
     @media (max-width: 600px) {
+      h1 {
+        font-size: 29px;
+      }
+
+      .moon {
+        font-size: 55px;
+      }
+
       .article {
-        padding: 35px 20px;
+        padding: 30px 12px;
       }
 
       .article p {
-        font-size: 18px;
+        font-size: 17px;
+      }
+
+      .article p:first-child {
+        font-size: 21px;
       }
     }
   </style>
@@ -115,25 +173,20 @@
 
 <body>
 
-  <nav>
-
-    <a href="../index.html">Accueil</a>
-    <a href="../journal.html">Journal</a>
-    <a href="../photos.html">Photos</a>
-    <a href="../a-propos.html">À propos</a>
-
-  </nav>
-
   <header>
+    <div class="moon">☾</div>
 
     <div class="flowers">
       ❀ ❁ ❀
     </div>
 
+    <h1>Tu étais là !</h1>
+
     <div class="date">
-     Vendredi 16 Octobre 2026
+      Vendredi 16 octobre 2026
     </div>
 
+    <div class="divider"></div>
   </header>
 
   <main>
@@ -141,54 +194,102 @@
     <article class="article">
 
       <p>
-        Tu étais là!
+        Tu étais là !
       </p>
 
       <p>
         <strong>♡</strong>
       </p>
-<p>J'en avais rêvé. De te voir. <br>
-Et quand je t'ai vu… mon cœur a bondi dans ma poitrine.<br>
-Tu étais là ! Tu étais là ! Tu étais là ! </p>
-    <p> Te revoir...<br> </p>
-   <p>   C'était retrouver la lumière d'un instant qu'on croyait perdu. <br> </p>
-   <p>  Ces nouveaux moments partagés : Une parenthèse de jeu et d'une joie simple, comme une évidence qui traverse le temps.<br> </p>
-<p>​« Je n'aime pas jouer au foot tout seul », t'avais écrit. Alors nous avons joué. Ensemble. <br> </p>
 
-      <p> Ces nouveaux souvenirs viennent rejoindre les anciens, pour continuer le livre de cette histoire. </p>
-<p>On dit parfois qu'il y a des rencontres bizarres, de celles qui ne s'effacent pas et ne ressemblent à aucune autre.<br>
-  Tu as cette place-là. Une place unique. <br> </p>
-  
-<p> ​Sache que plus les racines sont profondes, plus le lien est solide. Ces souvenirs restent et s'ancrent dans la terre. Personne ne pourra les effacer. Ils résisteront, intactes, à la pluie, au vent, et même au gel. </p>
+      <p>
+        J'en avais rêvé. De te voir.
+        <br>
+        Et quand je t'ai vu… mon cœur a bondi dans ma poitrine.
+        <br>
+        Tu étais là ! Tu étais là ! Tu étais là !
+      </p>
 
-      <p> Maintenant, penses à toi, à ta vie,
-        Qui veux-tu devenir? <br>
-        Aie confiance en l'avenir.<br>
-      Ce qui doit arriver, arrivera. <br>
-      Chaque chose en son temps. <br>
-      Etape par étape. <br>
-      Jour après jour. <br>
-      Année après année. </p>
+      <p>
+        Te revoir...
+      </p>
+
+      <p>
+        C'était retrouver la lumière d'un instant qu'on croyait perdu.
+      </p>
+
+      <p>
+        Ces nouveaux moments partagés : une parenthèse de jeu et d'une joie simple, comme une évidence qui traverse le temps.
+      </p>
+
+      <p>
+        « Je n'aime pas jouer au foot tout seul », t'avais écrit.
+        Alors nous avons joué. Ensemble.
+      </p>
+
+      <p>
+        Ces nouveaux souvenirs viennent rejoindre les anciens, pour continuer le livre de cette histoire.
+      </p>
+
+      <p>
+        On dit parfois qu'il y a des rencontres bizarres, de celles qui ne s'effacent pas et ne ressemblent à aucune autre.
+        <br>
+        Tu as cette place-là. Une place unique.
+      </p>
+
+      <p>
+        Sache que plus les racines sont profondes, plus le lien est solide.
+        Ces souvenirs restent et s'ancrent dans la terre.
+        Personne ne pourra les effacer.
+        Ils résisteront, intacts, à la pluie, au vent, et même au gel.
+      </p>
+
+      <p>
+        Maintenant, pense à toi, à ta vie.
+        <br>
+        Qui veux-tu devenir ?
+        <br>
+        Aie confiance en l'avenir.
+        <br>
+        Ce qui doit arriver, arrivera.
+        <br>
+        Chaque chose en son temps.
+        <br>
+        Étape par étape.
+        <br>
+        Jour après jour.
+        <br>
+        Année après année.
+      </p>
+
+      <strong>♡</strong>
 
     </article>
 
     <div class="back">
-      <a href="journal.html" id="retour-journal">
-        ← Retour au journal
+      <a href="index.html" id="retour-lou">
+        ← Retour à Lou
       </a>
     </div>
 
   </main>
 
+  <footer>
+    ☾ ✦ Lou · MoonBloomWitch ✦ ☽
+  </footer>
+
   <script>
     const parametres = new URLSearchParams(window.location.search);
-    const pageJournal = parametres.get('pageJournal');
+    const pageLou = parametres.get('pageLou');
 
-    if (pageJournal && /^\d+$/.test(pageJournal)) {
-      document.getElementById('retour-journal').href =
-        '../journal.html?pageJournal=' + pageJournal;
+    if (pageLou && /^\d+$/.test(pageLou)) {
+      document.getElementById('retour-lou').href =
+        'index.html?pageLou=' + pageLou;
     }
   </script>
+
+</body>
+
+</html>
 
 </body>
 </html>
