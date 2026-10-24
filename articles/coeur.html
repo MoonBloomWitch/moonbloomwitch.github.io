@@ -76,11 +76,21 @@
 
   <div class="coeur">♡</div>
 
-  <a class="retour" href="index.html">← Retour à Lou</a>
+<a class="retour" href="../lou/index.html" id="retour-lou">
+  ← Retour à Lou
+</a>
 
   <footer>
     ☾ ✦ Lou · MoonBloomWitch ✦ ☽
   </footer>
+<script>
+  const parametres = new URLSearchParams(window.location.search);
+  const pageLou = parametres.get('pageLou');
 
+  if (pageLou && /^\d+$/.test(pageLou)) {
+    document.getElementById('retour-lou').href =
+      '../lou/index.html?pageLou=' + pageLou;
+  }
+</script>
 </body>
 </html>
